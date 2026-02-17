@@ -1,0 +1,21 @@
+# Robots.txt for charts.checkonchain.com
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://charts.checkonchain.com/sitemap.xml
+
+# Optional: Block specific paths if needed
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all search engines to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
