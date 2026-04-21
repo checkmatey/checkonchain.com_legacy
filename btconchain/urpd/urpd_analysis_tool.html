@@ -74,7 +74,7 @@
   <div class="ctrl-sep"></div>
   <span class="ctrl-label">Events</span>
   <select id="keyevents">
-    <option value="TODAY" id="keyeventToday" selected>Today</option>
+    <option value="TODAY" id="keyeventToday" selected>Latest</option>
     <optgroup label="Days Ago">
       <option value="DAYS:7">7-days</option>
       <option value="DAYS:14">14-days</option>
@@ -525,14 +525,14 @@ function renderChart(data) {
       xaxis: "x", yaxis: "y",
       width: widths,
       marker: { color: lthColors, line: { width: 0.3, color: "rgba(0,0,0,0.25)" } },
-      hovertemplate: "Price: $%{x:,.2f}<br>LTH: " + yFmt + "<extra></extra>"
+      hovertemplate: "Price: $%{x:,.0f}<br>LTH: " + yFmt + "<extra></extra>"
     });
     traces.push({
       x: floors, y: sthY, type: "bar", name: "Short-Term Holders",
       xaxis: "x", yaxis: "y",
       width: widths,
       marker: { color: sthColors, line: { width: 0.3, color: "rgba(0,0,0,0.25)" } },
-      hovertemplate: "Price: $%{x:,.2f}<br>STH: " + yFmt + "<extra></extra>"
+      hovertemplate: "Price: $%{x:,.0f}<br>STH: " + yFmt + "<extra></extra>"
     });
 
     chartFloors = floors;
@@ -558,7 +558,7 @@ function renderChart(data) {
       xaxis: "x", yaxis: "y",
       width: chartWidths,
       marker: { color: barColors, line: { width: 0.3, color: "rgba(0,0,0,0.25)" } },
-      hovertemplate: "Price: $%{x:,.2f}<br>" + yFmt + "<extra></extra>"
+      hovertemplate: "Price: $%{x:,.0f}<br>" + yFmt + "<extra></extra>"
     });
   }
 
@@ -574,7 +574,7 @@ function renderChart(data) {
     name: "Percent of Total",
     line: { color: ORANGE, width: 2 },
     xaxis: "x", yaxis: "y2",
-    hovertemplate: "Price: $%{x:,.2f}<br>Percent of Total: %{y:.1f}%<extra></extra>"
+    hovertemplate: "Price: $%{x:,.0f}<br>Percent of Total: %{y:.1f}%<extra></extra>"
   });
 
   // ── Per-cohort cumulative lines (LTH/STH split only) ───────────
@@ -599,7 +599,7 @@ function renderChart(data) {
       line: { color: BLUE, width: 2 },
       xaxis: "x", yaxis: "y2",
       visible: "legendonly",
-      hovertemplate: "Price: $%{x:,.2f}<br>Percent LTHs: %{y:.1f}%<extra></extra>"
+      hovertemplate: "Price: $%{x:,.0f}<br>Percent LTHs: %{y:.1f}%<extra></extra>"
     });
     traces.push({
       x: chartFloors, y: sthCum, type: "scatter", mode: "lines",
@@ -607,7 +607,7 @@ function renderChart(data) {
       line: { color: RED, width: 2 },
       xaxis: "x", yaxis: "y2",
       visible: "legendonly",
-      hovertemplate: "Price: $%{x:,.2f}<br>Percent STHs: %{y:.1f}%<extra></extra>"
+      hovertemplate: "Price: $%{x:,.0f}<br>Percent STHs: %{y:.1f}%<extra></extra>"
     });
   }
 
@@ -791,6 +791,10 @@ function renderChart(data) {
       tickfont: { family: FONT, size: 14, color: INK }
     };
   }
+  // Crosshairs — mirrors charting.py:add_crosshairs()
+  var SPIKE = { showspikes: true, spikesnap: "cursor", spikethickness: -2,
+                spikemode: "toaxis+across", spikecolor: BLACK, spikedash: "5px" };
+  Object.keys(SPIKE).forEach(function(k) { xaxisLayout[k] = SPIKE[k]; });
 
   // ── Y1 range per chart type ────────────────────────────────────
   // Supply: robust-max over bars visible in the x-axis range, with a
@@ -1040,7 +1044,9 @@ function renderChart(data) {
       zeroline: valueMode === "unrealized",
       zerolinecolor: "rgb(45,45,46)",
       showgrid: false,
-      tickfont: { family: FONT, size: 14, color: INK }
+      tickfont: { family: FONT, size: 14, color: INK },
+      showspikes: true, spikesnap: "cursor", spikethickness: -2,
+      spikemode: "toaxis+across", spikecolor: BLACK, spikedash: "5px"
     },
     yaxis2: {
       title: { text: "Percent of Total", font: { family: FONT, size: 18, color: INK } },
@@ -1050,7 +1056,9 @@ function renderChart(data) {
       // convention but at the coarser granularity the user requested.
       tickmode: "linear", tick0: 0, dtick: 10,
       showgrid: false,
-      tickfont: { family: FONT, size: 14, color: INK }
+      tickfont: { family: FONT, size: 14, color: INK },
+      showspikes: true, spikesnap: "cursor", spikethickness: -2,
+      spikemode: "toaxis+across", spikecolor: BLACK, spikedash: "5px"
     },
     xaxis3: {
       overlaying: "x", anchor: "y3",
@@ -1262,13 +1270,10 @@ async function init() {
     try {
       var priceResp = await fetchJSON(BASE + "/api/series/price_close/day1");
       priceArray = priceResp.data || priceResp;
-      // Inject the current spot into the "Today ($XX.Xk)" keyevent
-      // option, formatted in thousands with one decimal place to mirror
-      // the cycle top/bottom entries below it.
       var latestSpot = getSpotFromCache(allDates[allDates.length - 1]);
       var todayOpt = document.getElementById("keyeventToday");
       if (todayOpt && latestSpot) {
-        todayOpt.textContent = "Today ($"
+        todayOpt.textContent = "Latest ($"
           + (latestSpot / 1000).toFixed(1)
           + "k)";
       }
