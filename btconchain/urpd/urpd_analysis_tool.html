@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Checkonchain URPD Analysis Tool</title>
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"
+        integrity="sha384-Hl48Kq2HifOWdXEjMsKo6qxqvRLTYqIGbvlENBmkHAxZKIGCXv43H6W1jA671RzC"
+        crossorigin="anonymous"></script>
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css"
+      integrity="sha384-RkASv+6KfBMW9eknReJIJ6b3UnjKOKC5bOUaNgIY778NFbQ8MtWq9Lr/khUgqtTt"
+      crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"
+        integrity="sha384-5JqMv4L/Xa0hfvtF06qboNdhvuYXUku9ZrhZh3bSk8VXF0A/RuSLHpLsSV9Zqhl6"
+        crossorigin="anonymous"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body { background: #FBFBFA; color: #2D2D2E; font-family: 'Raleway', verdana, arial, sans-serif; overflow: hidden; }
+  #wrap { display: flex; flex-direction: column; height: 100vh; height: 100dvh; }
+  #controls { display: flex; align-items: center; justify-content: flex-start; gap: 8px; padding: 8px 12px; background: #F7F7F6; border-bottom: 1px solid #E3E3E1; flex-wrap: wrap; font-family: 'Raleway', verdana, arial, sans-serif; }
+  /* Form elements don't inherit font-family by default, so force it
+     on every interactive descendant of #controls. */
+  #controls button,
+  #controls input,
+  #controls select,
+  #controls span,
+  #controls option,
+  #controls optgroup { font-family: 'Raleway', verdana, arial, sans-serif !important; }
+  #controls button { background: #FBFBFA; color: #2D2D2E; border: 1px solid #CFCFCB; padding: 5px 12px; font-size: 12px; font-weight: 500; cursor: pointer; letter-spacing: 0.3px; transition: all 0.15s; border-radius: 3px; }
+  #controls button:hover { background: #EDEDEA; border-color: #8E8E88; }
+  .mode-toggle { display: flex; gap: 0; border: 1px solid #CFCFCB; border-radius: 3px; overflow: hidden; }
+  .mode-toggle button { border: none; border-radius: 0; border-right: 1px solid #CFCFCB; padding: 5px 12px; font-size: 12px; font-family: 'Raleway', verdana, arial, sans-serif; }
+  .mode-toggle button:last-child { border-right: none; }
+  .mode-toggle button.active { background: #f7931a; color: #FBFBFA; font-weight: 700; box-shadow: inset 0 0 0 1px #2D2D2E; position: relative; z-index: 1; }
+  .mode-toggle button.active:hover { background: #e07e0b; }
+  #chart { width: 100%; flex: 1 1 auto; min-height: 0; background: #FBFBFA; }
+  #loading { position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 20px; color: rgb(0,0,0); display: none; z-index: 999; font-weight: 600; }
+  #keyevents { background: #FBFBFA; color: #2D2D2E; border: 1px solid #CFCFCB; padding: 4px 26px 4px 10px; font-family: inherit; font-size: 12px; font-weight: 500; letter-spacing: 0.3px; border-radius: 3px; cursor: pointer; width: 143px; -webkit-appearance: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%236F6F6A'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 8px center; }
+  #keyevents:hover { border-color: #8E8E88; }
+  #keyevents:focus { border-color: #f7931a; outline: none; }
+  #dateInput,
+  input.flatpickr-alt { background: #FBFBFA; color: #2D2D2E; border: 1px solid #CFCFCB; padding: 4px 10px; font-family: inherit; font-size: 14px; font-weight: 600; letter-spacing: 0.2px; cursor: pointer; border-radius: 3px; transition: border-color 0.15s; width: 130px; text-align: center; }
+  input.flatpickr-alt:hover { border-color: #8E8E88; }
+  input.flatpickr-alt:focus { border-color: #f7931a; outline: none; }
+  /* Flatpickr brand-colour overrides (selected day + today). */
+  .flatpickr-day.selected,
+  .flatpickr-day.selected:hover,
+  .flatpickr-day.startRange,
+  .flatpickr-day.endRange { background: #f7931a; border-color: #f7931a; }
+  .flatpickr-day.today { border-color: #f7931a; color: #f7931a; }
+  .flatpickr-day.today:hover { background: #f7931a; color: #FBFBFA; }
+  .flatpickr-months .flatpickr-month,
+  .flatpickr-current-month .flatpickr-monthDropdown-months,
+  .flatpickr-weekdays { color: #2D2D2E; }
+  .flatpickr-calendar { font-family: 'Raleway', verdana, arial, sans-serif; }
+  .ctrl-sep { width: 1px; height: 22px; background: #CFCFCB; margin: 0 4px; }
+  .ctrl-label { font-size: 12px; font-weight: 600; color: #6F6F6A; letter-spacing: 0.4px; text-transform: uppercase; padding: 0 2px 0 4px; white-space: nowrap; }
+  #logo-link { display: flex; align-items: center; margin-right: 4px; }
+  #logo-link img { height: 24px; width: auto; transition: opacity 0.15s; }
+  #logo-link img:hover { opacity: 0.7; }
+</style>
+</head>
+<body>
+<div id="wrap">
+<div id="controls">
+  <a id="logo-link" href="https://charts.checkonchain.com" title="checkonchain.com"><img src="https://raw.githubusercontent.com/checkmatey/checkonchain.com/main/webassets/images/_checkonchain_icon.png" alt="checkonchain"></a>
+  <div class="ctrl-sep"></div>
+  <button id="btnPrev" title="Previous day (Left / A)">&lt;</button>
+  <input type="text" id="dateInput" title="Pick a date" autocomplete="off" placeholder="DD-MMM-YYYY">
+  <button id="btnNext" title="Next day (Right / D)">&gt;</button>
+  <div class="ctrl-sep"></div>
+  <span class="ctrl-label">Events</span>
+  <select id="keyevents">
+    <option value="TODAY" id="keyeventToday" selected>Today</option>
+    <optgroup label="Days Ago">
+      <option value="DAYS:7">7-days</option>
+      <option value="DAYS:14">14-days</option>
+      <option value="DAYS:30">30-days</option>
+      <option value="DAYS:60">60-days</option>
+      <option value="DAYS:90">90-days</option>
+      <option value="DAYS:180">180-days</option>
+      <option value="DAYS:360">360-days</option>
+    </optgroup>
+    <optgroup label="Cycle Tops">
+      <option value="2025-10-06">Oct 2025 ($126k)</option>
+      <option value="2021-11-10">Nov 2021 ($69k)</option>
+      <option value="2021-04-14">Apr 2021 ($64.9k)</option>
+      <option value="2017-12-17">Dec 2017 ($19,783)</option>
+      <option value="2013-11-29">Nov 2013 ($1,163)</option>
+      <option value="2011-06-08">Jun 2011 ($32)</option>
+    </optgroup>
+    <optgroup label="Cycle Bottoms">
+      <option value="2022-11-21">Nov 2022 ($15.6k)</option>
+      <option value="2020-03-14">Mar 2020 ($4.8k)</option>
+      <option value="2018-12-15">Dec 2018 ($3.1k)</option>
+      <option value="2015-08-18">Aug 2015 ($194)</option>
+      <option value="2015-01-14">Jan 2015 ($152)</option>
+      <option value="2011-11-18">Nov 2011 ($2)</option>
+    </optgroup>
+  </select>
+  <div class="ctrl-sep"></div>
+  <span class="ctrl-label">Mode</span>
+  <div class="mode-toggle">
+    <button id="btnSupply" class="active">Supply [BTC]</button>
+    <button id="btnRealized">Realised [USD]</button>
+    <button id="btnUnrealized">Unrealised [USD]</button>
+  </div>
+  <div class="ctrl-sep"></div>
+  <span class="ctrl-label">Cohort</span>
+  <div class="mode-toggle">
+    <button id="btnPL" class="active">Profit/Loss</button>
+    <button id="btnSplit">LTH/STH</button>
+  </div>
+  <div class="ctrl-sep"></div>
+  <span class="ctrl-label">Scale</span>
+  <div class="mode-toggle">
+    <button id="btnLin" class="active">Linear</button>
+    <button id="btnLog">Log</button>
+  </div>
+  <div class="ctrl-sep"></div>
+  <span class="ctrl-label">Price</span>
+  <div class="mode-toggle" title="Price trace lookback window">
+    <button id="btnRange1Y">1Y</button>
+    <button id="btnRange3Y">3Y</button>
+    <button id="btnRange5Y" class="active">5Y</button>
+    <button id="btnRange8Y">8Y</button>
+    <button id="btnRangeAll">All</button>
+  </div>
+</div>
+<div id="chart"></div>
+</div>
+<div id="loading">Loading URPD Data...</div>
+<script>
+// ── Config ────────────────────────────────────────────────────────
+var BASE = "https://bitview.space";
+var GENESIS = new Date(2009, 0, 3);
+
+// checkonchain palette
+var ORANGE = "#f7931a";
+var RED    = "#f74870";
+var GREEN  = "#38d996";
+var BLUE   = "#2681ff";
+var YELLOW = "#fcc049";
+var BLACK  = "rgb(0,0,0)";
+// Near-transparent so paper + plot blend into the page body.
+var PAPER_BG = "rgba(255,255,255,0.1)";
+var PLOT_BG  = "rgba(255,255,255,0.1)";
+var INK      = "#2D2D2E";
+var MUTED    = "#6F6F6A";
+var GRID     = "rgba(0,0,0,0.08)";
+var FONT     = "'Raleway', verdana, arial, sans-serif";
+
+// Dimmed variants for LTH/STH "above spot" bars.
+var BLUE_50  = "rgba(38,129,255,0.5)";
+var RED_50   = "rgba(247,72,112,0.5)";
+// Purple @ 70% opacity — used for the URPD location marker on the
+// price trace. Matches base_chart_module.py:self.purple_70.
+var PURPLE_70 = "rgba(130,100,255,0.7)";
+
+// ── State ─────────────────────────────────────────────────────────
+var allDates = [];
+var currentIdx = 0;
+var priceArray = null;
+var splitMode = false;
+var valueMode = "supply";     // "supply" | "realized" | "unrealized"
+var bucketMode = "lin200";    // "lin200" | "log200"
+var priceLookbackYears = 5;   // 1 | 3 | 5 | 8 | null (null = All / full history)
+var smoothWindow = 5;         // Triangle-kernel width for linear bars (1 = off)
+var CACHE_MAX = 300;
+var cache = {};               // key: `${date}|${cohort}|${bucket}|${value}`
+var cacheSize = 0;
+var spotCache = {};
+var fpInstance = null;        // Flatpickr instance (created in init)
+
+// ── Helpers ───────────────────────────────────────────────────────
+function fetchJSON(url) {
+  return fetch(url).then(function(r) {
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return r.json();
+  });
+}
+
+function dayIndex(dateStr) {
+  var d = new Date(dateStr + "T00:00:00");
+  return Math.round((d - GENESIS) / 86400000);
+}
+
+function getSpotFromCache(dateStr) {
+  if (spotCache[dateStr] !== undefined) return spotCache[dateStr];
+  if (!priceArray) return null;
+  var idx = dayIndex(dateStr);
+  if (idx >= 0 && idx < priceArray.length) {
+    var e = priceArray[idx];
+    if (typeof e === "number" && e > 0) { spotCache[dateStr] = e; return e; }
+  }
+  return null;
+}
+
+function fmtUSD(v) {
+  var sign = v < 0 ? "-" : "";
+  var a = Math.abs(v);
+  if (a >= 1e12) return sign + "$" + (a/1e12).toFixed(2) + "T";
+  if (a >= 1e9)  return sign + "$" + (a/1e9).toFixed(2)  + "B";
+  if (a >= 1e6)  return sign + "$" + (a/1e6).toFixed(1)  + "M";
+  return sign + "$" + a.toLocaleString("en-US", {maximumFractionDigits: 0});
+}
+
+function fmtBTC(v) {
+  if (Math.abs(v) >= 1e6) return (v/1e6).toFixed(2) + "M BTC";
+  if (Math.abs(v) >= 1e3) return (v/1e3).toFixed(1) + "K BTC";
+  return v.toFixed(2) + " BTC";
+}
+
+// Annotation-specific formatters.
+//   Supply totals:  "20.000M BTC"  (Millions, 3 decimals)
+//   USD totals:     "$1,084.15B"   (Billions, 2 decimals)
+function fmtSupplyM(v) {
+  return (v / 1e6).toFixed(3) + "M BTC";
+}
+function fmtBillionUSD(v) {
+  var sign = v < 0 ? "-" : "";
+  var a = Math.abs(v) / 1e9;
+  return sign + "$" + a.toLocaleString("en-US",
+           { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "B";
+}
+
+// YYYY-Mmm-DD (locale-independent, cross-audience safe)
+var MONTH_ABBR = ["Jan","Feb","Mar","Apr","May","Jun",
+                  "Jul","Aug","Sep","Oct","Nov","Dec"];
+function fmtDateYMD(iso) {
+  // iso = "YYYY-MM-DD"
+  if (!iso || iso.length < 10) return iso || "";
+  var y = iso.substring(0, 4);
+  var m = parseInt(iso.substring(5, 7), 10);
+  var d = iso.substring(8, 10);
+  return y + "-" + MONTH_ABBR[m - 1] + "-" + d;
+}
+
+function valueLabel() {
+  if (valueMode === "supply")     return "Supply [BTC]";
+  if (valueMode === "realized")   return "Realised [USD]";
+  return "Unrealised [USD]";
+}
+
+function y1AxisTitle() {
+  if (valueMode === "supply")   return "Supply [BTC]";
+  if (valueMode === "realized") return "Invested Value [USD]";
+  return "Unrealised Value [USD]";
+}
+
+// Chart title body (without the trailing "[URPD*]" tag). Realised uses
+// different wording for the P/L and cohort views; the others just
+// append " by Cohort" in split mode.
+function titleBody(isSplit) {
+  var cohortLbl = isSplit ? " by Cohort" : "";
+  if (valueMode === "supply") return "Supply Distribution" + cohortLbl;
+  if (valueMode === "realized") {
+    return isSplit ? "Invested Value by Cohort" : "Invested Wealth";
+  }
+  return "Unrealised Profit/Loss" + cohortLbl;
+}
+
+function titleTag() {
+  if (valueMode === "supply")   return "[URPD]";
+  if (valueMode === "realized") return "[URPD-R]";
+  return "[URPD-U]";
+}
+
+// DD-MMM-YYYY.
+function fmtDateDMY(iso) {
+  if (!iso || iso.length < 10) return iso || "";
+  var y = iso.substring(0, 4);
+  var m = parseInt(iso.substring(5, 7), 10);
+  var d = iso.substring(8, 10);
+  return d + "-" + MONTH_ABBR[m - 1] + "-" + y;
+}
+
+function isCurrency() { return valueMode !== "supply"; }
+
+function cacheKey(date, cohort, bucket) {
+  return date + "|" + cohort + "|" + bucket + "|" + valueMode;
+}
+
+// ── Fetch a single cost-basis series (bucketed, 200 bins) ─────────
+// `bucket` is an optional override (defaults to the active bucketMode).
+// Annotation totals always pass "lin200" to ensure totals are identical
+// between Linear and Log views (BRK's log200 binning can round the
+// extremities of the distribution differently).
+function fetchSeriesAt(date, cohort, bucket) {
+  var key = cacheKey(date, cohort, bucket);
+  if (cache[key]) return Promise.resolve(cache[key]);
+  var url = BASE + "/api/series/cost-basis/" + cohort + "/" + date
+          + "?format=json&bucket=" + bucket + "&value=" + valueMode;
+  return fetchJSON(url).then(function(raw) {
+    // Keep every bucket in the cache — including the f=0 bin that
+    // BRK returns in log mode for dust-priced supply. It can't be
+    // plotted on a log axis but MUST count toward annotation totals.
+    // The plot-side filter happens downstream in renderChart().
+    var bins = [];
+    var keys = Object.keys(raw);
+    for (var i = 0; i < keys.length; i++) {
+      var f = parseFloat(keys[i]);
+      var v = raw[keys[i]];
+      if (!isFinite(f) || typeof v !== "number" || !isFinite(v)) continue;
+      bins.push({ floor: f, v: v });
+    }
+    bins.sort(function(a, b) { return a.floor - b.floor; });
+    if (cacheSize >= CACHE_MAX) { cache = {}; cacheSize = 0; }
+    cache[key] = bins;
+    cacheSize++;
+    return bins;
+  });
+}
+function fetchSeries(date, cohort) {
+  return fetchSeriesAt(date, cohort, bucketMode);
+}
+
+// ── Load + render pipeline ────────────────────────────────────────
+function loadAndRender() {
+  var dateStr = allDates[currentIdx];
+  if (!dateStr) return;
+  document.getElementById("loading").style.display = "block";
+
+  // Plot-side fetches — use the active bucketMode (lin200 / log200).
+  var plotFetches = [fetchSeries(dateStr, "all")];
+  if (splitMode) {
+    plotFetches.push(fetchSeries(dateStr, "lth"));
+    plotFetches.push(fetchSeries(dateStr, "sth"));
+  }
+
+  // Annotation-side fetches — ALWAYS lin200 so totals are the single
+  // source of truth regardless of the axis toggle. When bucketMode is
+  // already lin200 these promises resolve instantly from the cache.
+  var annFetches = [fetchSeriesAt(dateStr, "all", "lin200")];
+  if (splitMode) {
+    annFetches.push(fetchSeriesAt(dateStr, "lth", "lin200"));
+    annFetches.push(fetchSeriesAt(dateStr, "sth", "lin200"));
+  }
+
+  Promise.all([Promise.all(plotFetches), Promise.all(annFetches)]).then(function(pair) {
+    var plot = pair[0];
+    var ann  = pair[1];
+    var data = {
+      dateStr: dateStr,
+      spot:    getSpotFromCache(dateStr),
+      all:     plot[0],
+      lth:     plot[1] || null,
+      sth:     plot[2] || null,
+      annAll:  ann[0],
+      annLth:  ann[1] || null,
+      annSth:  ann[2] || null
+    };
+    renderChart(data);
+    document.getElementById("loading").style.display = "none";
+  }).catch(function(e) {
+    console.error("Render failed:", e, "— ensure BRK node at " + BASE + " is reachable");
+    document.getElementById("loading").style.display = "none";
+  });
+}
+
+// ── Bar widths (absolute USD) ─────────────────────────────────────
+//   log:             width = floor / 80   (proportional on log axis)
+//   linear P/L:      width = bin step     (bars fill the grid)
+//   linear cohort:   width = bin step x 0.75 (75% fill so LTH/STH read)
+function computeWidths(floors) {
+  if (bucketMode === "log200") {
+    return floors.map(function(f) { return f / 80; });
+  }
+  // Detect bin spacing from the first non-zero consecutive step;
+  // fall back to 200 (BRK's lin200 grid) if unavailable.
+  var dx = 200;
+  for (var i = 1; i < floors.length; i++) {
+    var step = floors[i] - floors[i - 1];
+    if (step > 0) { dx = step; break; }
+  }
+  if (splitMode) {
+    var w = dx * 1.0;
+    return floors.map(function() { return w; });
+  }
+  return floors.map(function() { return dx; });
+}
+
+// ── Triangle-kernel smoother (mass-preserving) ────────────────────
+// Builds a normalised centred triangle kernel of length N (odd),
+// e.g. N=5 → [1,2,3,2,1] / 9.
+function triangleKernel(n) {
+  if (!n || n < 2) return [1];
+  if (n % 2 === 0) n += 1;          // force odd length for symmetry
+  var mid = (n - 1) / 2;
+  var raw = [], sum = 0;
+  for (var i = 0; i < n; i++) {
+    var w = (mid + 1) - Math.abs(i - mid);
+    raw.push(w); sum += w;
+  }
+  return raw.map(function(w) { return w / sum; });
+}
+
+// Applies a centred kernel to `values` using SCATTER with reflected
+// boundaries. Each input donates kernel[j] * values[i] to neighbour
+// i + (j - mid); taps that would fall off the ends reflect back into
+// the array, so total mass is preserved exactly:
+//   Σ smoothed == Σ values
+// This is the clean, symmetric way to smooth a histogram without
+// leaking mass out of the edges or biasing left/right. Works for
+// signed values (Unrealised P/L) too.
+function smoothLinear(values, window) {
+  if (!values || values.length === 0) return values ? values.slice() : values;
+  if (!window || window <= 1) return values.slice();
+  var kernel = triangleKernel(window);
+  if (kernel.length < 2) return values.slice();
+  var n = values.length, mid = (kernel.length - 1) / 2;
+  var out = new Array(n);
+  for (var i = 0; i < n; i++) out[i] = 0;
+  for (var i = 0; i < n; i++) {
+    for (var j = 0; j < kernel.length; j++) {
+      var idx = i + j - mid;
+      if (idx < 0)      idx = -idx;                // reflect left
+      if (idx >= n)     idx = 2 * (n - 1) - idx;   // reflect right
+      if (idx < 0)      idx = 0;                   // safety (tiny n)
+      if (idx >= n)     idx = n - 1;
+      out[idx] += kernel[j] * values[i];
+    }
+  }
+  return out;
+}
+
+function colorForBar(floor, value, spot) {
+  if (valueMode === "unrealized") {
+    return value >= 0 ? GREEN : RED;
+  }
+  if (!spot || spot <= 0) return MUTED;
+  return floor <= spot ? GREEN : RED;
+}
+
+function cohortColor(cohortName, floor, spot) {
+  // Below-spot: full colour. Above-spot: dimmed 50% variant.
+  if (cohortName === "lth") return (spot && floor > spot) ? BLUE_50 : BLUE;
+  return (spot && floor > spot) ? RED_50 : RED;
+}
+
+function renderChart(data) {
+  var dateStr = data.dateStr;
+  var spot    = data.spot;
+  var all     = data.all;
+  var lth     = data.lth;
+  var sth     = data.sth;
+  // Annotation-only view of the same cohorts (always lin200 binning).
+  // Falls back to the plot-side data if the lin200 fetch wasn't made.
+  var annAll  = data.annAll || all;
+  var annLth  = data.annLth || lth;
+  var annSth  = data.annSth || sth;
+  var isSplit = splitMode && lth && sth;
+  var currency = isCurrency();
+
+  // ── Date picker sync ────────────────────────────────────────────
+  if (fpInstance) {
+    fpInstance.setDate(dateStr, false);
+  } else {
+    document.getElementById("dateInput").value = dateStr;
+  }
+
+  // ── Build traces ────────────────────────────────────────────────
+  // In log mode drop any bucket whose floor is ≤ 0 (BRK returns a
+  // dust-priced f=0 bin that can't live on a log10 axis). Annotation
+  // totals use the raw un-filtered arrays so numbers stay identical
+  // across linear and log views.
+  function plotBins(bins) {
+    return bucketMode === "log200"
+      ? bins.filter(function(b) { return b.floor > 0; })
+      : bins;
+  }
+  var allPlot = plotBins(all);
+  var lthPlot = lth ? plotBins(lth) : null;
+  var sthPlot = sth ? plotBins(sth) : null;
+
+  var traces = [];
+  var chartFloors, chartValues, chartWidths;
+  // Raw (pre-smooth) stacked values per bin — used for Y1 range so the
+  // axis matches urpd.py exactly and isn't inflated by smoothing edge
+  // artifacts (e.g. the dust bar bleeding into bars 1-2 in supply mode).
+  var rawChartValues;
+  // Per-cohort bar heights — populated in the isSplit branch and reused
+  // by the cumulative Percent LTHs / Percent STHs lines below.
+  var lthY = null, sthY = null;
+
+  if (isSplit) {
+    // Union of floors from LTH + STH (both expected to align since same bucket)
+    var floorSet = {};
+    lthPlot.forEach(function(b) { floorSet[b.floor] = true; });
+    sthPlot.forEach(function(b) { floorSet[b.floor] = true; });
+    var floors = Object.keys(floorSet).map(parseFloat)
+                       .sort(function(a, b) { return a - b; });
+
+    var lthMap = {}, sthMap = {};
+    lthPlot.forEach(function(b) { lthMap[b.floor] = b.v; });
+    sthPlot.forEach(function(b) { sthMap[b.floor] = b.v; });
+
+    lthY = floors.map(function(f) { return lthMap[f] || 0; });
+    sthY = floors.map(function(f) { return sthMap[f] || 0; });
+    // Stacked raw sum per bin, captured BEFORE smoothing so the Y1
+    // range stays anchored to the true distribution.
+    var rawLthY = lthY.slice(), rawSthY = sthY.slice();
+    rawChartValues = floors.map(function(_, i) {
+      return rawLthY[i] + rawSthY[i];
+    });
+    // Apply triangle-kernel smoother on linear bars only (log bars
+    // already read cleanly due to the floor/80 width scaling). Each
+    // cohort is smoothed independently so the stack stays clean.
+    if (bucketMode === "lin200") {
+      lthY = smoothLinear(lthY, smoothWindow);
+      sthY = smoothLinear(sthY, smoothWindow);
+    }
+    var widths = computeWidths(floors);
+
+    var lthColors = floors.map(function(f) { return cohortColor("lth", f, spot); });
+    var sthColors = floors.map(function(f) { return cohortColor("sth", f, spot); });
+
+    // LTH pushed first so barmode="stack" puts STHs on top.
+    var yFmt = currency ? "%{y:$,.0f}" : "%{y:,.2f} BTC";
+    traces.push({
+      x: floors, y: lthY, type: "bar", name: "Long-Term Holders",
+      xaxis: "x", yaxis: "y",
+      width: widths,
+      marker: { color: lthColors, line: { width: 0.3, color: "rgba(0,0,0,0.25)" } },
+      hovertemplate: "Price: $%{x:,.2f}<br>LTH: " + yFmt + "<extra></extra>"
+    });
+    traces.push({
+      x: floors, y: sthY, type: "bar", name: "Short-Term Holders",
+      xaxis: "x", yaxis: "y",
+      width: widths,
+      marker: { color: sthColors, line: { width: 0.3, color: "rgba(0,0,0,0.25)" } },
+      hovertemplate: "Price: $%{x:,.2f}<br>STH: " + yFmt + "<extra></extra>"
+    });
+
+    chartFloors = floors;
+    chartValues = floors.map(function(_, i) { return lthY[i] + sthY[i]; });
+    chartWidths = widths;
+  } else {
+    chartFloors = allPlot.map(function(b) { return b.floor; });
+    // Bar colours must read from the RAW pre-smoothed values so the
+    // profit/loss green/red split stays crisp at the spot boundary
+    // and the Unrealised sign doesn't blur across zero.
+    var barColors = allPlot.map(function(b) {
+      return colorForBar(b.floor, b.v, spot);
+    });
+    var rawValues = allPlot.map(function(b) { return b.v; });
+    rawChartValues = rawValues.slice();
+    chartValues = (bucketMode === "lin200")
+      ? smoothLinear(rawValues, smoothWindow)
+      : rawValues;
+    chartWidths = computeWidths(chartFloors);
+    var yFmt = currency ? "%{y:$,.0f}" : "%{y:,.2f} BTC";
+    traces.push({
+      x: chartFloors, y: chartValues, type: "bar", name: valueLabel(),
+      xaxis: "x", yaxis: "y",
+      width: chartWidths,
+      marker: { color: barColors, line: { width: 0.3, color: "rgba(0,0,0,0.25)" } },
+      hovertemplate: "Price: $%{x:,.2f}<br>" + yFmt + "<extra></extra>"
+    });
+  }
+
+  // ── Cumulative distribution on yaxis2 (abs for unrealised) ─────
+  var absTotal = chartValues.reduce(function(s, v) { return s + Math.abs(v); }, 0) || 1;
+  var running = 0;
+  var cumulPct = chartValues.map(function(v) {
+    running += Math.abs(v);
+    return 100 * running / absTotal;
+  });
+  traces.push({
+    x: chartFloors, y: cumulPct, type: "scatter", mode: "lines",
+    name: "Percent of Total",
+    line: { color: ORANGE, width: 2 },
+    xaxis: "x", yaxis: "y2",
+    hovertemplate: "Price: $%{x:,.2f}<br>Percent of Total: %{y:.1f}%<extra></extra>"
+  });
+
+  // ── Per-cohort cumulative lines (LTH/STH split only) ───────────
+  // Hidden by default (visible: "legendonly") — the user can toggle
+  // them on from the legend. Each cohort is normalised to its own
+  // total so both lines reach 100% at the highest price bin.
+  if (isSplit && lthY && sthY) {
+    var lthAbs = lthY.reduce(function(s, v) { return s + Math.abs(v); }, 0) || 1;
+    var sthAbs = sthY.reduce(function(s, v) { return s + Math.abs(v); }, 0) || 1;
+    var lthRun = 0, sthRun = 0;
+    var lthCum = lthY.map(function(v) {
+      lthRun += Math.abs(v);
+      return 100 * lthRun / lthAbs;
+    });
+    var sthCum = sthY.map(function(v) {
+      sthRun += Math.abs(v);
+      return 100 * sthRun / sthAbs;
+    });
+    traces.push({
+      x: chartFloors, y: lthCum, type: "scatter", mode: "lines",
+      name: "Percent LTHs",
+      line: { color: BLUE, width: 2 },
+      xaxis: "x", yaxis: "y2",
+      visible: "legendonly",
+      hovertemplate: "Price: $%{x:,.2f}<br>Percent LTHs: %{y:.1f}%<extra></extra>"
+    });
+    traces.push({
+      x: chartFloors, y: sthCum, type: "scatter", mode: "lines",
+      name: "Percent STHs",
+      line: { color: RED, width: 2 },
+      xaxis: "x", yaxis: "y2",
+      visible: "legendonly",
+      hovertemplate: "Price: $%{x:,.2f}<br>Percent STHs: %{y:.1f}%<extra></extra>"
+    });
+  }
+
+  // ── Totals / in-profit annotation block ─────────────────────────
+  // Reduce over the canonical lin200 bins so totals are identical in
+  // Linear and Log views. The plot-side arrays (all/lth/sth) can
+  // include rounding differences or axis-filtered buckets;
+  // annAll/annLth/annSth always contain the full lin200 set.
+  var sumBins = function(bins) {
+    return bins.reduce(function(s, b) { return s + b.v; }, 0);
+  };
+  var grandTotal = isSplit
+                     ? sumBins(annLth) + sumBins(annSth)
+                     : sumBins(annAll);
+  var annLines = [];
+
+  if (valueMode === "supply") {
+    // ── Supply ──────────────────────────────────────────────────────
+    //   Total Supply YY.YYYM BTC
+    //   P/L view:     In Profit / In Loss totals + share of total
+    //   LTH/STH view: LTH / STH Supply totals + share of total
+    annLines.push("<span style='color:" + ORANGE + "'><b>Total Supply "
+                  + fmtSupplyM(grandTotal) + "</b></span>");
+    if (isSplit) {
+      var lthSupplyTotal = sumBins(annLth);
+      var sthSupplyTotal = sumBins(annSth);
+      var sTot = lthSupplyTotal + sthSupplyTotal || 1;
+      annLines.push("<span style='color:" + BLUE + "'><b>LTH Supply "
+                    + fmtSupplyM(lthSupplyTotal) + " ("
+                    + (100 * lthSupplyTotal / sTot).toFixed(1) + "%)</b></span>");
+      annLines.push("<span style='color:" + RED  + "'><b>STH Supply "
+                    + fmtSupplyM(sthSupplyTotal) + " ("
+                    + (100 * sthSupplyTotal / sTot).toFixed(1) + "%)</b></span>");
+    } else if (spot && spot > 0) {
+      var pSupply = 0, lSupply = 0;
+      for (var iSup = 0; iSup < annAll.length; iSup++) {
+        if (annAll[iSup].floor <= spot) pSupply += annAll[iSup].v;
+        else                             lSupply += annAll[iSup].v;
+      }
+      var tSup = pSupply + lSupply || 1;
+      annLines.push("<span style='color:" + GREEN + "'><b>In Profit "
+                    + fmtSupplyM(pSupply) + " ("
+                    + (100 * pSupply / tSup).toFixed(1) + "%)</b></span>");
+      annLines.push("<span style='color:" + RED + "'><b>In Loss "
+                    + fmtSupplyM(lSupply) + " ("
+                    + (100 * lSupply / tSup).toFixed(1) + "%)</b></span>");
+    }
+  } else if (valueMode === "realized") {
+    // ── Realised ────────────────────────────────────────────────────
+    //   Realised Cap $YYY.YYB
+    //   P/L view:     In Profit / In Loss totals + share
+    //   LTH/STH view: LTHs / STHs cohort totals + share
+    annLines.push("<span style='color:" + ORANGE + "'><b>Realised Cap "
+                  + fmtBillionUSD(grandTotal) + "</b></span>");
+    if (isSplit) {
+      var lthRC = sumBins(annLth);
+      var sthRC = sumBins(annSth);
+      var rTot = lthRC + sthRC || 1;
+      annLines.push("<span style='color:" + BLUE + "'><b>LTHs "
+                    + fmtBillionUSD(lthRC) + " ("
+                    + (100 * lthRC / rTot).toFixed(1) + "%)</b></span>");
+      annLines.push("<span style='color:" + RED  + "'><b>STHs "
+                    + fmtBillionUSD(sthRC) + " ("
+                    + (100 * sthRC / rTot).toFixed(1) + "%)</b></span>");
+    } else if (spot && spot > 0) {
+      var pRC = 0, lRC = 0;
+      for (var iRC = 0; iRC < annAll.length; iRC++) {
+        if (annAll[iRC].floor <= spot) pRC += annAll[iRC].v;
+        else                            lRC += annAll[iRC].v;
+      }
+      var rPLTot = pRC + lRC || 1;
+      annLines.push("<span style='color:" + GREEN + "'><b>In Profit "
+                    + fmtBillionUSD(pRC) + " ("
+                    + (100 * pRC / rPLTot).toFixed(1) + "%)</b></span>");
+      annLines.push("<span style='color:" + RED + "'><b>In Loss "
+                    + fmtBillionUSD(lRC) + " ("
+                    + (100 * lRC / rPLTot).toFixed(1) + "%)</b></span>");
+    }
+  } else {
+    // ── Unrealised ──────────────────────────────────────────────────
+    if (isSplit) {
+      // Cohort view: three-line breakdown (no "Unrealised" prefix on
+      // the LTH/STH rows).
+      var up_all = 0, ul_all = 0;
+      var up_lth = 0, ul_lth = 0;
+      var up_sth = 0, ul_sth = 0;
+      for (var iL = 0; iL < annLth.length; iL++) {
+        var lv = annLth[iL].v;
+        if (lv >= 0) { up_lth += lv; up_all += lv; }
+        else         { ul_lth += lv; ul_all += lv; }
+      }
+      for (var iS = 0; iS < annSth.length; iS++) {
+        var sv = annSth[iS].v;
+        if (sv >= 0) { up_sth += sv; up_all += sv; }
+        else         { ul_sth += sv; ul_all += sv; }
+      }
+      annLines.push("<span style='color:" + ORANGE + "'><b>Unrealised Profit "
+                    + fmtBillionUSD(up_all) + " | Loss "
+                    + fmtBillionUSD(ul_all) + "</b></span>");
+      annLines.push("<span style='color:" + BLUE + "'><b>LTH Profit "
+                    + fmtBillionUSD(up_lth) + " | Loss "
+                    + fmtBillionUSD(ul_lth) + "</b></span>");
+      annLines.push("<span style='color:" + RED + "'><b>STH Profit "
+                    + fmtBillionUSD(up_sth) + " | Loss "
+                    + fmtBillionUSD(ul_sth) + "</b></span>");
+    } else {
+      // P/L view: Net Unrealised plus profit/loss totals with share.
+      var up = annAll.reduce(function(s, b) { return s + (b.v > 0 ? b.v : 0); }, 0);
+      var ul = annAll.reduce(function(s, b) { return s + (b.v < 0 ? b.v : 0); }, 0);
+      var tot  = up + Math.abs(ul) || 1;
+      var pPct = 100 * up          / tot;
+      var lPct = 100 * Math.abs(ul) / tot;
+      annLines.push("<span style='color:" + ORANGE + "'><b>Net Unrealised "
+                    + fmtBillionUSD(up + ul) + "</b></span>");
+      annLines.push("<span style='color:" + GREEN + "'><b>Unrealised Profit "
+                    + fmtBillionUSD(up) + " (" + pPct.toFixed(1) + "%)</b></span>");
+      annLines.push("<span style='color:" + RED + "'><b>Unrealised Loss "
+                    + fmtBillionUSD(ul) + " (" + lPct.toFixed(1) + "%)</b></span>");
+    }
+  }
+
+  // ── Title: "<b>{body} as of DD-MMM-YYYY [URPD{-R|-U}]</b>" ──────
+  var titleText = "<b>" + titleBody(isSplit)
+                + " as of " + fmtDateDMY(dateStr)
+                + " " + titleTag() + "</b>";
+
+  // ── X-axis range ─────────────────────────────────────────────────
+  //   LINEAR:
+  //     P/L  (non-cohort):   [0, floorMax]
+  //     LTH/STH (cohort):    [floorMin, floorMax]
+  //   LOG (axis type="log", so values are log10-units):
+  //     X1 min = floor(Fmax * ddownFrac, stepUSD), where
+  //        ddownFrac = 0.10 Supply (90% drawdown)
+  //                  = 0.20 Realised / Unrealised (80% drawdown)
+  //        stepUSD   = one order of magnitude below Fmax, so the axis
+  //                    always lands on a tidy round number appropriate
+  //                    to the active price regime:
+  //                       Fmax ≥ $100k → $10k step
+  //                       Fmax ≥ $10k  → $1k step
+  //                       Fmax ≥ $1k   → $100 step
+  //                       Fmax ≥ $100  → $10 step
+  //                       Fmax ≥ $10   → $1 step   … etc.
+  //     Hard floor = stepUSD so the axis never collapses to 0 but also
+  //     never sits *above* the distribution in low-price history
+  //     (e.g. 2013-2015 dates where $10k was above the ATH).
+  var xaxisLayout;
+  var floorMin = chartFloors[0] || 1;
+  var floorMax = chartFloors[chartFloors.length - 1] || (floorMin * 10);
+  if (bucketMode === "log200") {
+    var logMaxEdge = Math.log10(floorMax + 1000);
+    var ddownFrac  = (valueMode === "supply") ? 0.10 : 0.20;
+    var expMax     = Math.floor(Math.log10(Math.max(floorMax, 1e-6)));
+    var stepUSD    = Math.pow(10, expMax - 1);
+    var xMinUSD    = Math.floor((floorMax * ddownFrac) / stepUSD) * stepUSD;
+    if (!isFinite(xMinUSD) || xMinUSD < stepUSD) xMinUSD = stepUSD;
+    var xRangeLog  = [Math.log10(xMinUSD), logMaxEdge];
+    xaxisLayout = {
+      type: "log",
+      autorange: false,
+      range: xRangeLog,
+      tickprefix: "$",
+      separatethousands: true,
+      showgrid: false,
+      tickfont: { family: FONT, size: 14, color: INK }
+    };
+  } else {
+    var xRangeLin = isSplit ? [floorMin, floorMax] : [0, floorMax];
+    xaxisLayout = {
+      type: "linear",
+      autorange: false,
+      range: xRangeLin,
+      tickprefix: "$",
+      separatethousands: true,
+      showgrid: false,
+      // `nticks` is a hint, not a hard count — Plotly still snaps to a
+      // "nice" increment (1 / 2 / 2.5 / 5 × 10ⁿ). Raising it nudges the
+      // picker toward a finer tick: ~$10k on a $100k span, ~$1k on a
+      // $10k span, ~$100 on a $1k span, etc. Scales gracefully across
+      // every historical date without hard-coding a dtick.
+      nticks: 18,
+      tickfont: { family: FONT, size: 14, color: INK }
+    };
+  }
+
+  // ── Y1 range per chart type ────────────────────────────────────
+  // Supply: robust-max over bars visible in the x-axis range, with a
+  //   mode-dependent outlier skip (log=2, linear=5). Falls back to
+  //   absolute max when the distribution has fewer bars than the skip.
+  // Realised:   [0, values.max() * 1.1]
+  // Unrealised: [values.min(), 10e9]  (hard cap)
+  var yMin, yMax;
+  var maxOrZero = function(arr) {
+    return arr.length ? Math.max.apply(null, arr) : 0;
+  };
+  var minOrZero = function(arr) {
+    return arr.length ? Math.min.apply(null, arr) : 0;
+  };
+  // Robust max: returns the `skip`-th largest value in `arr`, falling
+  // back to the absolute max when `arr.length <= skip`. Treats the top
+  // `skip` bars as outliers so the axis scales to the readable body of
+  // the distribution, not the long legacy-supply tail.
+  var robustMax = function(arr, skip) {
+    if (!arr.length) return 0;
+    if (arr.length <= skip) return Math.max.apply(null, arr);
+    var sorted = arr.slice().sort(function(a, b) { return b - a; });
+    return sorted[skip];
+  };
+
+  if (valueMode === "supply") {
+    yMin = 0;
+    // Compute y-max only from bars visible in the current x-axis range.
+    // In log mode the axis starts well above $0, so legacy-supply
+    // spikes at low price bins are naturally excluded. In linear mode
+    // those bins ARE visible and need an outlier skip.
+    var xVisLo, xVisHi;
+    if (bucketMode === "log200") {
+      xVisLo = Math.pow(10, xaxisLayout.range[0]);
+      xVisHi = Math.pow(10, xaxisLayout.range[1]);
+    } else {
+      xVisLo = xaxisLayout.range[0];
+      xVisHi = xaxisLayout.range[1];
+    }
+    var visibleRaw = [];
+    for (var vi = 0; vi < rawChartValues.length; vi++) {
+      if (chartFloors[vi] >= xVisLo && chartFloors[vi] <= xVisHi) {
+        visibleRaw.push(rawChartValues[vi]);
+      }
+    }
+    if (!visibleRaw.length) visibleRaw = rawChartValues;
+    // Log: legacy bins are already off-screen; skip 2 for any mild
+    //       edge-of-range outliers while preserving tall modern bars.
+    // Linear: dust bins at $0-$1000 are on-screen and dominate;
+    //         skip 5 to reach the readable body of the distribution.
+    var skipN = (bucketMode === "log200") ? 2 : 5;
+    yMax = (robustMax(visibleRaw, skipN) * 1.15) || 1;
+  } else if (valueMode === "realized") {
+    yMin = 0;
+    yMax = (maxOrZero(chartValues) * 1.1) || 1;
+  } else {
+    // Unrealised: [chartValues.min(), 10e9].
+    yMin = minOrZero(chartValues);
+    yMax = 10e9;
+    if (!isFinite(yMin) || yMin >= 0) yMin = Math.min(0, yMin);
+    if (!isFinite(yMax) || yMax <= 0) yMax = 1;
+  }
+
+  var yPrefix = isCurrency() ? "$" : "₿";
+
+  // ── Shapes + spot line + annotations ───────────────────────────
+  var shapes = [];
+  var annotations = [
+    {
+      xref: "paper", yref: "paper", x: 0.02, y: 0.98,
+      text: annLines.join("<br>"), showarrow: false, align: "left",
+      font: { size: 14, family: FONT, color: INK }
+    },
+    {
+      xref: "paper", yref: "paper", x: 0.0, y: -0.10,
+      text: "Source: checkonchain.com, Powered by: Bitcoin Research Kit",
+      showarrow: false, xanchor: "left",
+      font: { size: 11, color: MUTED, family: FONT }
+    }
+  ];
+
+  if (spot && spot > 0) {
+    // Dashed spot marker rises from the zero line to ~50% chart height,
+    // with the price label at the top of the dashed segment.
+    var spotBottom = 0.00;
+    var spotTop    = 0.50;
+    // Plotly v2.x asymmetry on log-type axes: SHAPES take raw data x
+    // (Plotly converts internally), ANNOTATIONS take log10-transformed
+    // x. So the shape passes `spot` but the annotation needs log10(spot)
+    // when the axis is in log mode.
+    var spotXann = (bucketMode === "log200") ? Math.log10(spot) : spot;
+    shapes.push({
+      type: "line",
+      x0: spot, x1: spot, y0: spotBottom, y1: spotTop,
+      xref: "x", yref: "paper",
+      line: { color: BLACK, width: 1, dash: "dash" },
+      layer: "above"
+    });
+    var spotLabel = "Spot: $" + spot.toLocaleString("en-US", { maximumFractionDigits: 0 });
+    annotations.push({
+      x: spotXann, y: spotTop, xref: "x", yref: "paper",
+      text: spotLabel, showarrow: false,
+      xanchor: "left", yanchor: "bottom", align: "left",
+      font: { color: BLACK, size: 12, family: FONT },
+      bgcolor: "rgba(251,251,250,0.85)", borderpad: 4
+    });
+  }
+
+  // ── BTC price overlay ──────────────────────────────────────────
+  // The main x-axis belongs to the bars. The price trace is remapped
+  // horizontally so its lookback window fills the same range as the
+  // bars. yaxis3 is pinned so the lowest price sits around 50% chart
+  // height and the highest around 98%, keeping the line in the top
+  // half, clear of the bars.
+  var y3Range = null;
+  if (priceArray && priceArray.length > 0) {
+    var pP = [];
+    var pDates = [];
+    var cStr = null;
+    if (priceLookbackYears !== null) {
+      var cutoff = new Date(dateStr + "T00:00:00");
+      cutoff.setFullYear(cutoff.getFullYear() - priceLookbackYears);
+      cStr = cutoff.toISOString().split("T")[0];
+    }
+    for (var pi = 0; pi < priceArray.length; pi++) {
+      if (typeof priceArray[pi] === "number" && priceArray[pi] > 0) {
+        var pd = new Date(2009, 0, 3 + pi);
+        var pds = pd.toISOString().split("T")[0];
+        if (cStr && pds < cStr) continue;
+        if (pds > dateStr) continue;
+        pP.push(priceArray[pi]);
+        pDates.push(pd);
+      }
+    }
+    if (pP.length > 0) {
+      // Horizontal mapping for the price trace.
+      //
+      // The line lives on a hidden x3 axis that twins the bar axis.
+      // Whatever horizontal extent the bars show, the price trace has
+      // to span the same window or log and linear views won't align.
+      // Read the displayed range from xaxisLayout.range (single source
+      // of truth) and remap the price series across it.
+      //
+      // In log mode Plotly expects axis.range in log10 units, so
+      // xaxisLayout.range is already [logMin, logMax]. Interpolate in
+      // that space, then exponentiate for the trace values (Plotly
+      // re-logs them internally).
+      var axRange = xaxisLayout.range;
+      var xLo = axRange[0];
+      var xHi = axRange[1];
+
+      // Timeline spans from the earliest visible price sample to
+      // 6 months past the viewed date, leaving a fixed empty band on
+      // the right regardless of lookback window.
+      var viewEnd  = new Date(dateStr + "T00:00:00");
+      var leftDate = pDates[0];
+      var rightDate = new Date(viewEnd);
+      rightDate.setMonth(rightDate.getMonth() + 6);
+      var spanMs = rightDate - leftDate;
+      if (spanMs <= 0) spanMs = 1;
+
+      function fracFor(d) { return (d - leftDate) / spanMs; }
+      function xFromFrac(f) {
+        // xLo/xHi are already in native axis space (log10 for log,
+        // raw for linear).
+        var val = xLo + f * (xHi - xLo);
+        return bucketMode === "log200" ? Math.pow(10, val) : val;
+      }
+
+      var pX = [];
+      for (var k = 0; k < pP.length; k++) pX.push(xFromFrac(fracFor(pDates[k])));
+
+      // y3 range: confine the line to the top ~50% of the plot.
+      var minP = Math.min.apply(null, pP);
+      var maxP = Math.max.apply(null, pP);
+      if (spot && spot > 0) {
+        if (spot < minP) minP = spot;
+        if (spot > maxP) maxP = spot;
+      }
+      var logMin = Math.log10(minP);
+      var logMax = Math.log10(maxP);
+      var spanData = Math.max(logMax - logMin, 0.05);
+      var spanAxis = spanData / 0.48;
+      var a = logMin - 0.50 * spanAxis;
+      var b = a + spanAxis;
+      y3Range = [a, b];
+
+      // Legend name shows the spot price as of the viewed date, e.g.
+      // "Spot Price $74,080". Falls back to the latest available price
+      // on the trace when no spot is cached for the active date.
+      var legendSpot = (spot && spot > 0) ? spot : pP[pP.length - 1];
+      var priceLegend = "Spot Price $" + legendSpot.toLocaleString(
+        "en-US", { maximumFractionDigits: 0 });
+      // Price trace lives on its own hidden x3/y3 pair so the lookback
+      // selector can never influence the visible bar axis.
+      // Plotly renders traces in array order — push the spot marker
+      // before the line so the orange diamond sits behind the trace.
+      if (spot && spot > 0) {
+        var spotX = xFromFrac(fracFor(viewEnd));
+        traces.push({
+          x: [spotX], y: [spot], type: "scatter", mode: "markers",
+          xaxis: "x3", yaxis: "y3",
+          name: "URPD Location",
+          marker: { color: PURPLE_70, symbol: "triangle-down", size: 14, line: { color: PURPLE_70, width: 0 } },
+          hoverinfo: "skip", showlegend: true
+        });
+      }
+      traces.push({
+        x: pX, y: pP, type: "scatter", mode: "lines",
+        xaxis: "x3", yaxis: "y3",
+        line: { color: BLACK, width: 1.5 },
+        opacity: 0.3,
+        hoverinfo: "skip", showlegend: true,
+        name: priceLegend
+      });
+    }
+  }
+
+  // ── Layout ──────────────────────────────────────────────────────
+  var layout = {
+    title: { text: titleText, x: 0.5, xanchor: "center",
+             // Anchor the title in container coordinates so it hugs the
+             // top of the chart div with pad.t of breathing room. This
+             // lets margin.t be sized purely for the title → legend gap.
+             y: 1.0, yanchor: "top", yref: "container",
+             pad: { t: 18 },
+             font: { size: 26, family: FONT, color: INK } },
+    font: { family: FONT, color: INK },
+    paper_bgcolor: PAPER_BG,
+    plot_bgcolor:  PLOT_BG,
+    barmode: isSplit ? "stack" : "overlay",
+    bargap: 0,
+    legend: {
+      orientation: "h",
+      yanchor: "bottom", y: 1.02,
+      xanchor: "center", x: 0.5,
+      font: { family: FONT, size: 14, color: INK },
+      bgcolor: "rgba(0,0,0,0)"
+    },
+    xaxis: xaxisLayout,
+    yaxis: {
+      title: { text: y1AxisTitle(), font: { family: FONT, size: 18, color: INK } },
+      side: "left",
+      tickprefix: yPrefix,
+      separatethousands: true,
+      range: [yMin, yMax],
+      zeroline: valueMode === "unrealized",
+      zerolinecolor: "rgb(45,45,46)",
+      showgrid: false,
+      tickfont: { family: FONT, size: 14, color: INK }
+    },
+    yaxis2: {
+      title: { text: "Percent of Total", font: { family: FONT, size: 18, color: INK } },
+      side: "right", overlaying: "y",
+      ticksuffix: "%", range: [0, 100],
+      // 10% intervals (fractional 0.1) — mirrors urpd.py's dtick=0.05
+      // convention but at the coarser granularity the user requested.
+      tickmode: "linear", tick0: 0, dtick: 10,
+      showgrid: false,
+      tickfont: { family: FONT, size: 14, color: INK }
+    },
+    xaxis3: {
+      overlaying: "x", anchor: "y3",
+      type: xaxisLayout.type,
+      range: xaxisLayout.range.slice(),
+      autorange: false, fixedrange: true,
+      showticklabels: false, showgrid: false, visible: false
+    },
+    yaxis3: {
+      overlaying: "y", anchor: "x3",
+      showticklabels: false, showgrid: false,
+      type: "log", visible: false, fixedrange: true,
+      autorange: y3Range ? false : true,
+      range: y3Range || undefined
+    },
+    annotations: annotations,
+    shapes: shapes,
+    // Centred checkonchain watermark (hollow logo, 30% width, 10% opacity).
+    images: [{
+      source: "https://raw.githubusercontent.com/checkmatey/checkonchain.com/main/webassets/images/_checkonchain_hollow.png",
+      xref: "paper", yref: "paper",
+      x: 0.5, y: 0.5,
+      sizex: 0.3, sizey: 0.3,
+      xanchor: "center", yanchor: "middle",
+      opacity: 0.1,
+      layer: "below"
+    }],
+    margin: { l: 80, r: 80, t: 95, b: 50 },
+    hovermode: "closest",
+    // uirevision preserves user zoom/pan across Plotly.react calls while
+    // the key is unchanged. It excludes priceLookbackYears so flipping
+    // 1Y/3Y/5Y/8Y/All does not disturb any user interaction. Date,
+    // cohort, scale, and valueMode legitimately alter the bar axis, so
+    // changing those resets the zoom state.
+    uirevision: dateStr + "|" + (isSplit ? "split" : "pl")
+              + "|" + bucketMode + "|" + valueMode
+  };
+
+  // Hide the Plotly logo and drop zoom/pan/select/lasso/zoomIn/zoomOut/
+  // autoScale/resetScale — leaves screenshot and hover toggles only.
+  Plotly.react("chart", traces, layout, {
+    responsive: true,
+    displaylogo: false,
+    modeBarButtonsToRemove: [
+      "zoom2d", "pan2d", "select2d", "lasso2d",
+      "zoomIn2d", "zoomOut2d", "autoScale2d", "resetScale2d"
+    ]
+  });
+}
+
+// ── Navigation ────────────────────────────────────────────────────
+function goTo(idx) {
+  idx = Math.max(0, Math.min(allDates.length - 1, idx));
+  if (idx !== currentIdx) {
+    currentIdx = idx;
+    applyDefaultScaleForDate(allDates[idx]);
+    loadAndRender();
+  }
+}
+
+document.getElementById("btnPrev").onclick = function() { goTo(currentIdx - 1); };
+document.getElementById("btnNext").onclick = function() { goTo(currentIdx + 1); };
+
+// ── Cohort toggle (P/L vs LTH/STH) ────────────────────────────────
+document.getElementById("btnPL").onclick = function() {
+  splitMode = false;
+  document.getElementById("btnPL").classList.add("active");
+  document.getElementById("btnSplit").classList.remove("active");
+  loadAndRender();
+};
+document.getElementById("btnSplit").onclick = function() {
+  splitMode = true;
+  document.getElementById("btnSplit").classList.add("active");
+  document.getElementById("btnPL").classList.remove("active");
+  loadAndRender();
+};
+
+// ── Value mode selector (Supply / Realised / Unrealised) ─────────
+function setValueMode(mode) {
+  valueMode = mode;
+  var ids = { supply: "btnSupply", realized: "btnRealized", unrealized: "btnUnrealized" };
+  Object.keys(ids).forEach(function(k) {
+    document.getElementById(ids[k]).classList.toggle("active", k === mode);
+  });
+  loadAndRender();
+}
+document.getElementById("btnSupply").onclick     = function() { setValueMode("supply"); };
+document.getElementById("btnRealized").onclick   = function() { setValueMode("realized"); };
+document.getElementById("btnUnrealized").onclick = function() { setValueMode("unrealized"); };
+
+// ── Scale toggle (Linear / Log) ───────────────────────────────────
+// Dates prior to this cutoff default to log scale — early-history
+// prices span orders of magnitude so linear bucketing compresses the
+// distribution into a single spike near $0.
+var LOG_SCALE_CUTOFF = "2017-12-01";
+
+// Updates `bucketMode` + button state WITHOUT triggering a render.
+// Called automatically by goTo() and jumpToDate() so the scale follows
+// the selected date. Manual Scale button clicks still override until
+// the next navigation.
+function applyDefaultScaleForDate(dateStr) {
+  var mode = (dateStr && dateStr < LOG_SCALE_CUTOFF) ? "log200" : "lin200";
+  if (mode === bucketMode) return;
+  bucketMode = mode;
+  document.getElementById("btnLin").classList.toggle("active", mode === "lin200");
+  document.getElementById("btnLog").classList.toggle("active", mode === "log200");
+}
+
+function setBucketMode(mode) {
+  bucketMode = mode;
+  document.getElementById("btnLin").classList.toggle("active", mode === "lin200");
+  document.getElementById("btnLog").classList.toggle("active", mode === "log200");
+  loadAndRender();
+}
+document.getElementById("btnLin").onclick = function() { setBucketMode("lin200"); };
+document.getElementById("btnLog").onclick = function() { setBucketMode("log200"); };
+
+// ── Price lookback selector (1Y / 3Y / 5Y / 8Y / All) ─────────────
+function setPriceLookback(years, btnId) {
+  priceLookbackYears = years; // null = All
+  var ids = ["btnRange1Y","btnRange3Y","btnRange5Y","btnRange8Y","btnRangeAll"];
+  ids.forEach(function(id) {
+    document.getElementById(id).classList.toggle("active", id === btnId);
+  });
+  loadAndRender();
+}
+document.getElementById("btnRange1Y").onclick  = function() { setPriceLookback(1,    "btnRange1Y");  };
+document.getElementById("btnRange3Y").onclick  = function() { setPriceLookback(3,    "btnRange3Y");  };
+document.getElementById("btnRange5Y").onclick  = function() { setPriceLookback(5,    "btnRange5Y");  };
+document.getElementById("btnRange8Y").onclick  = function() { setPriceLookback(8,    "btnRange8Y");  };
+document.getElementById("btnRangeAll").onclick = function() { setPriceLookback(null, "btnRangeAll"); };
+
+// ── Keyboard navigation (← → A D only) ────────────────────────────
+document.addEventListener("keydown", function(e) {
+  if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
+  if (e.key === "ArrowLeft" || e.key === "a" || e.key === "A") {
+    e.preventDefault(); goTo(currentIdx - 1);
+  } else if (e.key === "ArrowRight" || e.key === "d" || e.key === "D") {
+    e.preventDefault(); goTo(currentIdx + 1);
+  }
+});
+
+// ── Date input ────────────────────────────────────────────────────
+// Picks the requested date if present in allDates, otherwise snaps to
+// the nearest earlier available day.
+function jumpToDate(val) {
+  if (!val) return;
+  var idx = allDates.indexOf(val);
+  if (idx >= 0) {
+    currentIdx = idx;
+    applyDefaultScaleForDate(allDates[idx]);
+    loadAndRender();
+    return;
+  }
+  var nearest = 0;
+  for (var i = 0; i < allDates.length; i++) {
+    if (allDates[i] <= val) nearest = i;
+    else break;
+  }
+  currentIdx = nearest;
+  applyDefaultScaleForDate(allDates[nearest]);
+  loadAndRender();
+}
+
+document.getElementById("keyevents").addEventListener("change", function(e) {
+  var v = e.target.value;
+  if (!v) return;
+  if (v === "TODAY") {
+    goTo(allDates.length - 1);
+  } else if (v.indexOf("DAYS:") === 0) {
+    // Days-ago snapshot: N calendar days before the latest available
+    // date. jumpToDate() will snap to the nearest earlier available
+    // day in allDates if the exact date isn't present.
+    var n = parseInt(v.substring(5), 10);
+    if (isFinite(n) && n > 0 && allDates.length > 0) {
+      var latest = new Date(allDates[allDates.length - 1] + "T00:00:00");
+      latest.setDate(latest.getDate() - n);
+      jumpToDate(latest.toISOString().split("T")[0]);
+    }
+  } else {
+    jumpToDate(v);
+  }
+});
+
+// ── Bootstrap ─────────────────────────────────────────────────────
+async function init() {
+  try {
+    var rawDates = await fetchJSON(BASE + "/api/series/cost-basis/all/dates");
+    allDates = rawDates.filter(function(d) { return /^\d{4}-\d{2}-\d{2}$/.test(d); });
+    if (!allDates.length) throw new Error("No valid dates from BRK");
+    currentIdx = allDates.length - 1;
+
+    // ── Date picker (Flatpickr) ──────────────────────────────────
+    // Visible format is locale-independent (DD-MMM-YYYY); the
+    // underlying value stays ISO (YYYY-MM-DD).
+    fpInstance = flatpickr("#dateInput", {
+      dateFormat: "Y-m-d",
+      altInput:   true,
+      altFormat:  "d-M-Y",
+      allowInput: true,
+      minDate:    allDates[0],
+      maxDate:    allDates[allDates.length - 1],
+      onChange: function(selectedDates, dateStr) {
+        if (dateStr) jumpToDate(dateStr);
+      }
+    });
+    // Brand-match the generated alt-input element.
+    if (fpInstance.altInput) fpInstance.altInput.classList.add("flatpickr-alt");
+    try {
+      var priceResp = await fetchJSON(BASE + "/api/series/price_close/day1");
+      priceArray = priceResp.data || priceResp;
+      // Inject the current spot into the "Today ($XX.Xk)" keyevent
+      // option, formatted in thousands with one decimal place to mirror
+      // the cycle top/bottom entries below it.
+      var latestSpot = getSpotFromCache(allDates[allDates.length - 1]);
+      var todayOpt = document.getElementById("keyeventToday");
+      if (todayOpt && latestSpot) {
+        todayOpt.textContent = "Today ($"
+          + (latestSpot / 1000).toFixed(1)
+          + "k)";
+      }
+    } catch (e) {
+      console.warn("Price array preload failed:", e);
+    }
+    loadAndRender();
+  } catch (e) {
+    var el = document.getElementById("loading");
+    el.textContent = "Unable to load URPD data. Please refresh or try again later.";
+    el.style.display = "block";
+    console.error("Init failed:", e, "— ensure BRK node at " + BASE + " is reachable");
+  }
+}
+init();
+</script>
+</body>
+</html>
