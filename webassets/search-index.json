@@ -1,0 +1,7848 @@
+[
+ {
+  "path": "btconchain/adoption/actaddress_momentum/actaddress_momentum",
+  "title": "Bitcoin Active Address Momentum",
+  "category": "Network Stats",
+  "tags": [
+   "Active Address Momentum"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/addresscounts/addresscounts",
+  "title": "Address Counts by Cohort",
+  "category": "Network Stats",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/avg_txperblock/avg_txperblock",
+  "title": "Average Transactions Per Block",
+  "category": "Network Stats",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/coinblockvaluedestroyed_momentum/coinblockvaluedestroyed_momentum",
+  "title": "Bitcoin Coinday Value Destroyed Momentum",
+  "category": "Network Stats",
+  "tags": [
+   "Coinday Value Destroyed Momentum"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/feerevenue_zscore/feerevenue_zscore",
+  "title": "Fee Revenue Z-Score Ribbon",
+  "category": "Network Stats",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/feestotal_btc/feestotal_btc",
+  "title": "Total Fee Revenue and Average Fee Rates",
+  "category": "Network Stats",
+  "tags": [
+   "Fee Revenue [BTC]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/feestotal_usd/feestotal_usd",
+  "title": "Total Fee Revenue and Average Fee Rates",
+  "category": "Network Stats",
+  "tags": [
+   "Fee Revenue [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/inscriptions_fee_0/inscriptions_fee_0",
+  "title": "Inscription Fees Paid by Type",
+  "category": "Network Stats",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/inscriptions_fee_1/inscriptions_fee_1",
+  "title": "Inscription Fee Dominance by Type",
+  "category": "Network Stats",
+  "tags": [
+   "Relative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/inscriptions_fee_2/inscriptions_fee_2",
+  "title": "Cumulative Inscription Fees Paid by Type",
+  "category": "Network Stats",
+  "tags": [
+   "Cumulative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/inscriptions_size_0/inscriptions_size_0",
+  "title": "Inscription Blockspace Consumption by Type",
+  "category": "Network Stats",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/inscriptions_size_1/inscriptions_size_1",
+  "title": "Inscription Blockspace Dominance by Type",
+  "category": "Network Stats",
+  "tags": [
+   "Relative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/inscriptions_size_2/inscriptions_size_2",
+  "title": "Cumulative Inscription Blockspace Consumption by Type",
+  "category": "Network Stats",
+  "tags": [
+   "Cumulative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/inscriptions_tx_0/inscriptions_tx_0",
+  "title": "Inscription Transaction Counts by Type",
+  "category": "Network Stats",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/inscriptions_tx_1/inscriptions_tx_1",
+  "title": "Inscription Transaction Dominance by Type",
+  "category": "Network Stats",
+  "tags": [
+   "Relative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/inscriptions_tx_2/inscriptions_tx_2",
+  "title": "Cumulative Inscription Transaction Count by Type",
+  "category": "Network Stats",
+  "tags": [
+   "Cumulative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/inscriptions_vs_addresses/inscriptions_vs_addresses",
+  "title": "Active Addresses Impact From Non-Monetary Transactions",
+  "category": "Network Stats",
+  "tags": [
+   "Impact On Addresses"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/transfer_volumes_btc/transfer_volumes_btc",
+  "title": "Bitcoin Transfer Volume [BTC]",
+  "category": "Network Stats",
+  "tags": [
+   "Transfer Volumes [BTC]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/transfer_volumes_usd/transfer_volumes_usd",
+  "title": "Bitcoin Transfer Volume [USD]",
+  "category": "Network Stats",
+  "tags": [
+   "Transfer Volumes [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/transfervolume_momentum_usd/transfervolume_momentum_usd",
+  "title": "Bitcoin Transfer Volume Momentum [USD]",
+  "category": "Network Stats",
+  "tags": [
+   "USD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/transfervolume_momentum/transfervolume_momentum",
+  "title": "Bitcoin Transfer Volume Momentum",
+  "category": "Network Stats",
+  "tags": [
+   "BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/adoption/txcount_momentum/txcount_momentum",
+  "title": "Bitcoin Transaction Count Momentum",
+  "category": "Network Stats",
+  "tags": [
+   "Transaction Count Momentum"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/btcvs_eth_sol/btcvs_eth_sol",
+  "title": "ETH/BTC vs SOL/BTC Index",
+  "category": "Capital Rotation",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/calmaratio_btc/calmaratio_btc",
+  "title": "Calmar Ratio",
+  "category": "Capital Rotation",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/capitalrotation_cagr_tradfi/capitalrotation_cagr_tradfi",
+  "title": "CAGR Comparison with TradFi Assets (5-year)",
+  "category": "Capital Rotation",
+  "tags": [
+   "CAGR Comparison"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/capitalrotation_cagr/capitalrotation_cagr",
+  "title": "Compound Annual Growth Rate (CAGR)",
+  "category": "Capital Rotation",
+  "tags": [
+   "BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/capitalrotation_calmarratio_tradfi/capitalrotation_calmarratio_tradfi",
+  "title": "Calmar Ratio Comparison with Tradfi Assets (5-year)",
+  "category": "Capital Rotation",
+  "tags": [
+   "Calmar Ratio Comparison"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/capitalrotation_netposchange/capitalrotation_netposchange",
+  "title": "Capital Rotation Net Position Change",
+  "category": "Capital Rotation",
+  "tags": [
+   "Major Assets"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/capitalrotation_sharpe_sortino_calmar_btc/capitalrotation_sharpe_sortino_calmar_btc",
+  "title": "Bitcoin Sharpe, Sortino and Calmar Ratios (1-year)",
+  "category": "Capital Rotation",
+  "tags": [
+   "Sharpe, Sortino, Calmar Ratios (1yr)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/capitalrotation_sharperatio_tradfi/capitalrotation_sharperatio_tradfi",
+  "title": "Sharpe Ratio Comparison with Tradfi Assets (5-year)",
+  "category": "Capital Rotation",
+  "tags": [
+   "Sharpe Ratio Comparison"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/capitalrotation_sortinoratio_tradfi/capitalrotation_sortinoratio_tradfi",
+  "title": "Sortino Ratio Comparison with Tradfi Assets (5-year)",
+  "category": "Capital Rotation",
+  "tags": [
+   "Sortino Ratio Comparison"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/capitalrotation_tradfi_pricedinbtc/capitalrotation_tradfi_pricedinbtc",
+  "title": "TradFi Assets Priced in BTC",
+  "category": "Capital Rotation",
+  "tags": [
+   "TradFi Priced in BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/capitalrotation_tradfi_soundmoney_inflationrate/capitalrotation_tradfi_soundmoney_inflationrate",
+  "title": "Bitcoin vs Gold Inflation Rate and Stock-to-Flow Ratios",
+  "category": "Capital Rotation",
+  "tags": [
+   "Sound Money Inflation Rates"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/capitalrotation_tradfi_soundmoney_supplies/capitalrotation_tradfi_soundmoney_supplies",
+  "title": "Sound Money Supply Comparison",
+  "category": "Capital Rotation",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/capitalrotation_tradfi_soundmoney/capitalrotation_tradfi_soundmoney",
+  "title": "Sound Money Market Cap",
+  "category": "Capital Rotation",
+  "tags": [
+   "Sound Money Market Caps"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/crypto_pricedingold/crypto_pricedingold",
+  "title": "Bitcoin, Ethereum and Solana vs Gold Since Feb-2022",
+  "category": "Capital Rotation",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/doge_profitabledays/doge_profitabledays",
+  "title": "DOGE/BTC Profitable Days",
+  "category": "Capital Rotation",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/eth_profitabledays/eth_profitabledays",
+  "title": "ETH/BTC Profitable Days",
+  "category": "Capital Rotation",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/marketcap_bars/marketcap_bars",
+  "title": "There Is No Second Best",
+  "category": "Capital Rotation",
+  "tags": [
+   "Rankings"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/marketcap_divergence/marketcap_divergence",
+  "title": "Market Cap Divergence of Bitcoin from Crypto",
+  "category": "Capital Rotation",
+  "tags": [
+   "Divergence"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/sharperatio_btc/sharperatio_btc",
+  "title": "Sharpe Ratio",
+  "category": "Capital Rotation",
+  "tags": [
+   "BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/sol_profitabledays/sol_profitabledays",
+  "title": "SOL/BTC Profitable Days",
+  "category": "Capital Rotation",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/capitalrotation/sortinoratio_btc/sortinoratio_btc",
+  "title": "Sortino Ratio",
+  "category": "Capital Rotation",
+  "tags": [
+   "BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/coinblocks_0/coinblocks_0",
+  "title": "Coinblocks",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/coinblocks_1/coinblocks_1",
+  "title": "Cumulative Coinblocks",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/coinblockvalue_0/coinblockvalue_0",
+  "title": "Coinblock Value [USD.blocks]",
+  "category": "Cointime Economics",
+  "tags": [
+   "Coinblock Value"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/coinblockvalue_1/coinblockvalue_1",
+  "title": "Cumulative Coinblock Value [USD.blocks]",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/coindays_0/coindays_0",
+  "title": "Coindays",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/coindays_1/coindays_1",
+  "title": "Cumulative Coindays",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/cointime_histogram_mvrv_active/cointime_histogram_mvrv_active",
+  "title": "Active MVRV Histogram",
+  "category": "Cointime Economics",
+  "tags": [
+   "Histogram: Active MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/cointime_histogram_mvrv_aviv/cointime_histogram_mvrv_aviv",
+  "title": "AVIV Ratio Histogram",
+  "category": "Cointime Economics",
+  "tags": [
+   "Histogram: AVIV Ratio"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/cointime_histogram_mvrv_cointime/cointime_histogram_mvrv_cointime",
+  "title": "Cointime MVRV Histogram",
+  "category": "Cointime Economics",
+  "tags": [
+   "Histogram: Cointime MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/cointime_histogram_mvrv_vaulted/cointime_histogram_mvrv_vaulted",
+  "title": "Vaulted MVRV Histogram",
+  "category": "Cointime Economics",
+  "tags": [
+   "Histogram: Vaulted MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/cointime_pricing_all_0/cointime_pricing_all_0",
+  "title": "Pricing Models",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/cointime_pricing_all_1/cointime_pricing_all_1",
+  "title": "Pricing Models",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/cointime_pricing_lostcap/cointime_pricing_lostcap",
+  "title": "Estimated Proportion of Lost or Long-Dormant Coins",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/cointimenvtrvt/cointimenvtrvt",
+  "title": "Cointime NVT and RVT Ratios",
+  "category": "Cointime Economics",
+  "tags": [
+   "Cointime NVT and RVT"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/histogram_nvtrvt/histogram_nvtrvt",
+  "title": "Cointime NVT and RVT Histogram",
+  "category": "Cointime Economics",
+  "tags": [
+   "Histogram: Cointime NVT and RVT"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/hodlernetpositionchange/hodlernetpositionchange",
+  "title": "Bitcoin HODLer Net Position Change",
+  "category": "Cointime Economics",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/inflation_s2f/inflation_s2f",
+  "title": "Annualised Inflation Rates and Stock-to-Flow Ratio",
+  "category": "Cointime Economics",
+  "tags": [
+   "Inflation and S2F"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/liveliness/liveliness",
+  "title": "Liveliness, Vaultedness and A2VR",
+  "category": "Cointime Economics",
+  "tags": [
+   "Liveliness and Vaultedness"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/livelinessderivatives_30/livelinessderivatives_30",
+  "title": "Concurrent Liveliness and Liveliness Incremental Change",
+  "category": "Cointime Economics",
+  "tags": [
+   "Liveliness Derivatives"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/nupl_aviv/nupl_aviv",
+  "title": "Net Unrealized Profit/Loss (NUPL)",
+  "category": "Cointime Economics",
+  "tags": [
+   "Cointime NUPL"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/pricing_mvrv_active_1/pricing_mvrv_active_1",
+  "title": "Active Realized Price and MVRV",
+  "category": "Cointime Economics",
+  "tags": [
+   "Active MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/pricing_mvrv_aviv_1/pricing_mvrv_aviv_1",
+  "title": "True Market Mean and AVIV Ratio",
+  "category": "Cointime Economics",
+  "tags": [
+   "AVIV Ratio"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/pricing_mvrv_cointime_0/pricing_mvrv_cointime_0",
+  "title": "Cointime Price and Cointime MVRV",
+  "category": "Cointime Economics",
+  "tags": [
+   "Cointime MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/pricing_mvrv_vaulted_1/pricing_mvrv_vaulted_1",
+  "title": "Vaulted Realized Price and MVRV",
+  "category": "Cointime Economics",
+  "tags": [
+   "Vaulted MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/supply_active_breakdown_90/supply_active_breakdown_90",
+  "title": "Active Supply Net Change Decomposition (90-day)",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/supply_activevaulted_0/supply_activevaulted_0",
+  "title": "Supply Regions Total Balance [BTC]",
+  "category": "Cointime Economics",
+  "tags": [
+   "Supply Regions"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/supply_activevaulted_1/supply_activevaulted_1",
+  "title": "Supply Regions Relative Balance [%]",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/supply_netposchange_30/supply_netposchange_30",
+  "title": "Supply Regions Net Position Change (30-day)",
+  "category": "Cointime Economics",
+  "tags": [
+   "Supply Net Position Change (30-day)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/supply_netposchange_7/supply_netposchange_7",
+  "title": "Supply Regions Net Position Change (7-day)",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/supply_netposchange_90/supply_netposchange_90",
+  "title": "Supply Regions Net Position Change (90-day)",
+  "category": "Cointime Economics",
+  "tags": [
+   "Supply Net Position Change (90-day)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/supply_vaulted_breakdown_90/supply_vaulted_breakdown_90",
+  "title": "Vaulted Supply Net Change Decomposition (90-day)",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/vaultingrate/vaultingrate",
+  "title": "Vaulting Rate",
+  "category": "Cointime Economics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/cointime/velocity/velocity",
+  "title": "Annualised Velocity",
+  "category": "Cointime Economics",
+  "tags": [
+   "Monetary Velocity"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/confluence/confluence_cycleextremeoscillators_0/confluence_cycleextremeoscillators_0",
+  "title": "Bitcoin Cycle Extreme Oscillators",
+  "category": "Confluence Models",
+  "tags": [
+   "Extreme Oscillators"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/confluence/confluence_cycleextremeoscillators_1/confluence_cycleextremeoscillators_1",
+  "title": "Bitcoin Cycle Extreme Oscillators",
+  "category": "Confluence Models",
+  "tags": [
+   "Cycle Tops and Bottoms"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/confluence/confluence_onchainactivity/confluence_onchainactivity",
+  "title": "Bitcoin On-chain Activity Strength Signal",
+  "category": "Confluence Models",
+  "tags": [
+   "Onchain Activity Strength"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/confluence/confluence_zscore_boxwhisker/confluence_zscore_boxwhisker",
+  "title": "Checkonchain Z-Score Confluence for Bitcoin",
+  "category": "Confluence Models",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/confluence/cycleextreme_v2_0/cycleextreme_v2_0",
+  "title": "Bitcoin Cycle Extreme Oscillators",
+  "category": "Confluence Models",
+  "tags": [
+   "Oscillators V2"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/confluence/cycleextreme_v2_1/cycleextreme_v2_1",
+  "title": "Bitcoin Cycle Extreme Oscillators",
+  "category": "Confluence Models",
+  "tags": [
+   "Signal V2"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/capitaltovaluationratio/capitaltovaluationratio",
+  "title": "Capital Flow Required per Unit Valuation Change",
+  "category": "Demand",
+  "tags": [
+   "Liquidity Capital Change"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/demandflow_comparison_30/demandflow_comparison_30",
+  "title": "Comparing the Scale of ETFs, Capital Inflows, and LTH Spending",
+  "category": "Demand",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/inflowcomparison_2015-01-01/inflowcomparison_2015-01-01",
+  "title": "Demand Inflow Estimates Since 2015-01-01",
+  "category": "Demand",
+  "tags": [
+   "2015"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/inflowcomparison_2020-03-12/inflowcomparison_2020-03-12",
+  "title": "Demand Inflow Estimates Since 2020-03-12",
+  "category": "Demand",
+  "tags": [
+   "Demand Est"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/inflowcomparison_2022-11-09/inflowcomparison_2022-11-09",
+  "title": "Demand Inflow Estimates Since 2022-11-09",
+  "category": "Demand",
+  "tags": [
+   "FTX"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/inflowcomparison_2024-01-01/inflowcomparison_2024-01-01",
+  "title": "Demand Inflow Estimates Since 2024-01-01",
+  "category": "Demand",
+  "tags": [
+   "2024"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/marketcapgainedperdollar/marketcapgainedperdollar",
+  "title": "Market Cap Change per Realised Dollar",
+  "category": "Demand",
+  "tags": [
+   "Market Cap Gained Per Dollar"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/multipliereffect/multipliereffect",
+  "title": "Realised Capital Multiplier Effect (365-day)",
+  "category": "Demand",
+  "tags": [
+   "Multiplier"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/rcapliquiditycycle/rcapliquiditycycle",
+  "title": "Realised Cap Liquidity Cycle",
+  "category": "Demand",
+  "tags": [
+   "Realised Liquidity Cycle"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/realisedcap_fundamentals/realisedcap_fundamentals",
+  "title": "Realised Cap Net Position Change",
+  "category": "Demand",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/sold_lthspent_2018-01-01/sold_lthspent_2018-01-01",
+  "title": "Long-Term Holder Distribution Since 2018-01-01",
+  "category": "Demand",
+  "tags": [
+   "Sold 2018+"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/sold_lthspent_2022-11-09/sold_lthspent_2022-11-09",
+  "title": "Long-Term Holder Distribution Since 2022-11-09",
+  "category": "Demand",
+  "tags": [
+   "Sold 2022+"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/sold_realisedpnl_2015-01-01/sold_realisedpnl_2015-01-01",
+  "title": "Realised Profit/Loss Since 2015-01-01 (30-day Sum)",
+  "category": "Demand",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/demand/sold_realisedpnl_2020-01-01/sold_realisedpnl_2020-01-01",
+  "title": "Realised Profit/Loss Since 2020-01-01 (30-day Sum)",
+  "category": "Demand",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_btc_liquidations/derivatives_btc_liquidations",
+  "title": "Bitcoin: Futures Liquidation Volumes",
+  "category": "Derivatives",
+  "tags": [
+   "Liquidations"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_btc_longliqdominance/derivatives_btc_longliqdominance",
+  "title": "Bitcoin: Long Liquidation Dominance",
+  "category": "Derivatives",
+  "tags": [
+   "Long Liquidation Domninance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_cme_prices/derivatives_cme_prices",
+  "title": "Bitcoin CME Futures Contract Prices",
+  "category": "Derivatives",
+  "tags": [
+   "Prices"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_futures_fundingrate_sumdays/derivatives_futures_fundingrate_sumdays",
+  "title": "Bitcoin Perpetual Futures Funding Rates Excessive Days",
+  "category": "Derivatives",
+  "tags": [
+   "Excess Days"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_futures_fundingrate/derivatives_futures_fundingrate",
+  "title": "Bitcoin Perpetual Futures Funding Rates",
+  "category": "Derivatives",
+  "tags": [
+   "Funding Rates"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_futures_oi_byexchange_0/derivatives_futures_oi_byexchange_0",
+  "title": "Bitcoin Futures Open Interest [USD]",
+  "category": "Derivatives",
+  "tags": [
+   "Futures Open Interest [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_futures_oi_byexchange_1/derivatives_futures_oi_byexchange_1",
+  "title": "Bitcoin Futures Open Interest [BTC]",
+  "category": "Derivatives",
+  "tags": [
+   "Futures Open Interest [BTC]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_futures_oi_byexchange_2/derivatives_futures_oi_byexchange_2",
+  "title": "Bitcoin Futures Open Interest [Dominance (%)]",
+  "category": "Derivatives",
+  "tags": [
+   "Dominance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_futuresoi_1daychange/derivatives_futuresoi_1daychange",
+  "title": "Bitcoin Futures Open Interest 7-day Change",
+  "category": "Derivatives",
+  "tags": [
+   "OI 1-day"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_futuresoi_vs_price_scatter/derivatives_futuresoi_vs_price_scatter",
+  "title": "Bitcoin Futures OI vs Price Change (7-day)",
+  "category": "Derivatives",
+  "tags": [
+   "OI vs Price"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_futuresvolume_byexchange_0/derivatives_futuresvolume_byexchange_0",
+  "title": "Bitcoin Futures Volume [USD]",
+  "category": "Derivatives",
+  "tags": [
+   "Futures Volume"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_futuresvolume_byexchange_1/derivatives_futuresvolume_byexchange_1",
+  "title": "Bitcoin Futures Volume [BTC]",
+  "category": "Derivatives",
+  "tags": [
+   "BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_futuresvolume_byexchange_2/derivatives_futuresvolume_byexchange_2",
+  "title": "Bitcoin Futures Volume Dominance (%)",
+  "category": "Derivatives",
+  "tags": [
+   "Dominance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_futuresvolume/derivatives_futuresvolume",
+  "title": "Bitcoin Futures Trade Volume [USD]",
+  "category": "Derivatives",
+  "tags": [
+   "Binance vs CME"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_options_oi_byexchange_0/derivatives_options_oi_byexchange_0",
+  "title": "Bitcoin Options Open Interest [USD]",
+  "category": "Derivatives",
+  "tags": [
+   "Open Interest"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_options_oi_byexchange_1/derivatives_options_oi_byexchange_1",
+  "title": "Bitcoin Options Open Interest [BTC]",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_options_oi_byexchange_2/derivatives_options_oi_byexchange_2",
+  "title": "Bitcoin Options Open Interest [Dominance]",
+  "category": "Derivatives",
+  "tags": [
+   "OI Dominance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_options_volume_byexchange_0/derivatives_options_volume_byexchange_0",
+  "title": "Bitcoin Options Volume [USD]",
+  "category": "Derivatives",
+  "tags": [
+   "Volume"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_options_volume_byexchange_1/derivatives_options_volume_byexchange_1",
+  "title": "Bitcoin Options Volume [BTC]",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_options_volume_byexchange_2/derivatives_options_volume_byexchange_2",
+  "title": "Bitcoin Options Volume [Dominance]",
+  "category": "Derivatives",
+  "tags": [
+   "Vol Dominance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_spot_volume/derivatives_spot_volume",
+  "title": "Bitcoin Spot Volume [USD]",
+  "category": "Derivatives",
+  "tags": [
+   "Spot Volume"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_spotvolume_cvd_0/derivatives_spotvolume_cvd_0",
+  "title": "Bitcoin Spot Cumulative Volume Delta [USD]",
+  "category": "Derivatives",
+  "tags": [
+   "CVD [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_spotvolume_cvd_1/derivatives_spotvolume_cvd_1",
+  "title": "Bitcoin Spot Cumulative Volume Delta [BTC]",
+  "category": "Derivatives",
+  "tags": [
+   "Cumulative Volume Delta"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_termstructure_0/derivatives_termstructure_0",
+  "title": "Bitcoin Futures Term Structure Price",
+  "category": "Derivatives",
+  "tags": [
+   "Term Structure [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/derivatives_termstructure_1/derivatives_termstructure_1",
+  "title": "Bitcoin Futures Term Structure Premium (Annualised)",
+  "category": "Derivatives",
+  "tags": [
+   "Term Structure [% Premium]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/etf_cashcarry/etf_cashcarry",
+  "title": "The Cash & Carry Trade",
+  "category": "Derivatives",
+  "tags": [
+   "Cash & Carry"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/fundingrate_zscore/fundingrate_zscore",
+  "title": "Perpetual Futures Funding Rate Z-Score",
+  "category": "Derivatives",
+  "tags": [
+   "Z-Score"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_oi_urpd_/ibit_oi_urpd_",
+  "title": "IBIT Options Open Interest URPD [USD]",
+  "category": "Derivatives",
+  "tags": [
+   "OI URPD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_oi_urpd_diff_30d_0/ibit_oi_urpd_diff_30d_0",
+  "title": "IBIT Options Open Interest 30-day Change URPD (Contracts)",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_oi_urpd_diff_30d_1/ibit_oi_urpd_diff_30d_1",
+  "title": "IBIT Options Open Interest 30-day Change URPD [USD]",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_oi_urpd_diff_7d_0/ibit_oi_urpd_diff_7d_0",
+  "title": "IBIT Options Open Interest 7-day Change URPD (Contracts)",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_oi_urpd_diff_7d_1/ibit_oi_urpd_diff_7d_1",
+  "title": "IBIT Options Open Interest 7-day Change URPD [USD]",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_options_delta_cones/ibit_options_delta_cones",
+  "title": "IBIT Options Delta Probability Cones [Chance of Expiring Below]",
+  "category": "Derivatives",
+  "tags": [
+   "Probability Cones"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_options_expiry_oi/ibit_options_expiry_oi",
+  "title": "IBIT Options Open Interest by Expiration",
+  "category": "Derivatives",
+  "tags": [
+   "OI by Expiry"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_options_gamma_bystrike_-1/ibit_options_gamma_bystrike_-1",
+  "title": "IBIT Options Gamma Exposure By Strike (All Expirations)",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_options_strike_oi_-1/ibit_options_strike_oi_-1",
+  "title": "IBIT Options Open Interest by Strike (All Expirations)",
+  "category": "Derivatives",
+  "tags": [
+   "IBIT"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_options_strike_oi_0/ibit_options_strike_oi_0",
+  "title": "IBIT Options Open Interest by Strike (Jul-26)",
+  "category": "Derivatives",
+  "tags": [
+   "1M"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_options_strike_oi_1/ibit_options_strike_oi_1",
+  "title": "IBIT Options Open Interest by Strike (Jul-26 to Sep-26)",
+  "category": "Derivatives",
+  "tags": [
+   "1Q"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_options_strike_oi_2/ibit_options_strike_oi_2",
+  "title": "IBIT Options Open Interest by Strike (Oct-26 to Dec-26)",
+  "category": "Derivatives",
+  "tags": [
+   "2Q"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_options_strike_oi_3/ibit_options_strike_oi_3",
+  "title": "IBIT Options Open Interest by Strike (Jan-27 to Mar-27)",
+  "category": "Derivatives",
+  "tags": [
+   "3Q"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_options_strike_oi_4/ibit_options_strike_oi_4",
+  "title": "IBIT Options Open Interest by Strike (Jun-27)",
+  "category": "Derivatives",
+  "tags": [
+   "4Q"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/ibit_options_strike_oi_5/ibit_options_strike_oi_5",
+  "title": "IBIT Options Open Interest by Strike (Dec-27 to Dec-28)",
+  "category": "Derivatives",
+  "tags": [
+   "1y+"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/leverageratio_0/leverageratio_0",
+  "title": "Derivatives Leverage Ratio vs Market Cap",
+  "category": "Derivatives",
+  "tags": [
+   "Lev Ratio [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/leverageratio_1/leverageratio_1",
+  "title": "Derivatives Leverage Ratio vs Market Cap",
+  "category": "Derivatives",
+  "tags": [
+   "Lev Ratio [BTC]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/openinterest_futures_vs_options/openinterest_futures_vs_options",
+  "title": "Derivatives Futures vs Options Open Interest",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_25deltaskew/options_25deltaskew",
+  "title": "Options 25-Delta Skew",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_atmimpliedvolatility/options_atmimpliedvolatility",
+  "title": "Options Implied Volatility",
+  "category": "Derivatives",
+  "tags": [
+   "Implied Vol"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_expiry_oi/options_expiry_oi",
+  "title": "Deribit Options Open Interest by Expiration",
+  "category": "Derivatives",
+  "tags": [
+   "OI by Expiry"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_ibit_10deltaskew/options_ibit_10deltaskew",
+  "title": "IBIT Options 10-Delta Skew",
+  "category": "Derivatives",
+  "tags": [
+   "10-Delta-Skew"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_ibit_25deltaskew/options_ibit_25deltaskew",
+  "title": "IBIT Options 25-Delta Skew",
+  "category": "Derivatives",
+  "tags": [
+   "25-Delta-Skew"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_ibit_delta_smile/options_ibit_delta_smile",
+  "title": "IBIT Options Delta By Strike Price",
+  "category": "Derivatives",
+  "tags": [
+   "Delta"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_ibit_gamma_smile/options_ibit_gamma_smile",
+  "title": "IBIT Options Gamma By Strike Price",
+  "category": "Derivatives",
+  "tags": [
+   "Gamma"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_ibit_gammaqueeze_change/options_ibit_gammaqueeze_change",
+  "title": "IBIT Options Gamma Squeeze Potential",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_ibit_gammaqueeze/options_ibit_gammaqueeze",
+  "title": "IBIT Options Gamma Squeeze Potential",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_ibit_rho_smile/options_ibit_rho_smile",
+  "title": "IBIT Options Rho By Strike Price",
+  "category": "Derivatives",
+  "tags": [
+   "Rho"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_ibit_strike_delta/options_ibit_strike_delta",
+  "title": "IBIT Options Probability of Expiring Above Strike",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_ibit_theta_smile/options_ibit_theta_smile",
+  "title": "IBIT Options Theta By Strike Price",
+  "category": "Derivatives",
+  "tags": [
+   "Theta"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_ibit_vega_smile/options_ibit_vega_smile",
+  "title": "IBIT Options Vega By Strike Price",
+  "category": "Derivatives",
+  "tags": [
+   "Vega"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_ibit_volatilitysmile/options_ibit_volatilitysmile",
+  "title": "IBIT Options Implied Volatility Smile",
+  "category": "Derivatives",
+  "tags": [
+   "Volatility Smile"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_putcalloi/options_putcalloi",
+  "title": "Options Open Interest by Contract Type",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_putcallratio/options_putcallratio",
+  "title": "Options Put/Call Ratio",
+  "category": "Derivatives",
+  "tags": [
+   "Put/Call"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_putcallvol/options_putcallvol",
+  "title": "Options Volume by Contract Type",
+  "category": "Derivatives",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_strike_delta/options_strike_delta",
+  "title": "Deribit Options Probability of Expiring Above Strike",
+  "category": "Derivatives",
+  "tags": [
+   "Probability"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_strike_oi_-1/options_strike_oi_-1",
+  "title": "Deribit Options Open Interest by Expiration (All Expirations)",
+  "category": "Derivatives",
+  "tags": [
+   "Dbit"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_strike_oi_0/options_strike_oi_0",
+  "title": "Deribit Options Open Interest by Expiration (Jul-26)",
+  "category": "Derivatives",
+  "tags": [
+   "1M"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_strike_oi_1/options_strike_oi_1",
+  "title": "Deribit Options Open Interest by Expiration (Jul-26 to Sep-26)",
+  "category": "Derivatives",
+  "tags": [
+   "1Q"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_strike_oi_2/options_strike_oi_2",
+  "title": "Deribit Options Open Interest by Expiration (Dec-26)",
+  "category": "Derivatives",
+  "tags": [
+   "2Q"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_strike_oi_3/options_strike_oi_3",
+  "title": "Deribit Options Open Interest by Expiration (Mar-27)",
+  "category": "Derivatives",
+  "tags": [
+   "3Q"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_strike_oi_4/options_strike_oi_4",
+  "title": "Deribit Options Open Interest by Expiration (Jun-27)",
+  "category": "Derivatives",
+  "tags": [
+   "4Q"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_strike_oi_5/options_strike_oi_5",
+  "title": "Deribit Options Open Interest by Expiration (Jun-27)",
+  "category": "Derivatives",
+  "tags": [
+   "1y+"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/derivatives/options_volatilitysmile/options_volatilitysmile",
+  "title": "Deribit Options Implied Volatility Smile",
+  "category": "Derivatives",
+  "tags": [
+   "Vol Smile"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_balance_0/btctc_balance_0",
+  "title": "Bitcoin Treasury Company Balances",
+  "category": "Entities",
+  "tags": [
+   "Balance [BTC]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_balance_1/btctc_balance_1",
+  "title": "Bitcoin Treasury Company Bitcoin Value",
+  "category": "Entities",
+  "tags": [
+   "Balance [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_daystocover_bar/btctc_daystocover_bar",
+  "title": "Bitcoin Treasury Company Days to Cover (90-day Stacking Rate)",
+  "category": "Entities",
+  "tags": [
+   "D2C Bars"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_daystocover/btctc_daystocover",
+  "title": "Bitcoin Treasury Company Days-to-Cover mNAV (90d Rate)",
+  "category": "Entities",
+  "tags": [
+   "Days2Cover"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_daystoreplace/btctc_daystoreplace",
+  "title": "Bitcoin Treasury Company Days-to-Replace (90d Rate)",
+  "category": "Entities",
+  "tags": [
+   "Days2Replace"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_drawdown/btctc_drawdown",
+  "title": "Bitcoin Treasury Company Drawdown Since 01-Apr-2024",
+  "category": "Entities",
+  "tags": [
+   "Drawdown"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_marketcap/btctc_marketcap",
+  "title": "Bitcoin Treasury Company Market Cap",
+  "category": "Entities",
+  "tags": [
+   "MCap"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_mnav_bar/btctc_mnav_bar",
+  "title": "Bitcoin Treasury Company Valuation & mNAV",
+  "category": "Entities",
+  "tags": [
+   "mNAV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_mnav/btctc_mnav",
+  "title": "Bitcoin Treasury Company mNAV",
+  "category": "Entities",
+  "tags": [
+   "mNAV Hist"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_price/btctc_price",
+  "title": "Bitcoin Treasury Company Price Performance Since 01-Apr-2024",
+  "category": "Entities",
+  "tags": [
+   "Prices"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_realisedcap_0/btctc_realisedcap_0",
+  "title": "Bitcoin Treasury Company Realised Cap",
+  "category": "Entities",
+  "tags": [
+   "RCap"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_realisedcap_1/btctc_realisedcap_1",
+  "title": "Bitcoin Treasury Company Realised Price",
+  "category": "Entities",
+  "tags": [
+   "Cost Basis"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_stackingrates_m/btctc_stackingrates_m",
+  "title": "Bitcoin Treasury Company Monthly BTC Stacking Rates",
+  "category": "Entities",
+  "tags": [
+   "Stacking 1M"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/btctc_stackingrates_w/btctc_stackingrates_w",
+  "title": "Bitcoin Treasury Company Weekly BTC Stacking Rates",
+  "category": "Entities",
+  "tags": [
+   "Stacking 1W"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/demandflow_comparison_30/demandflow_comparison_30",
+  "title": "Aggregate Capital Flows Into Bitcoin",
+  "category": "Entities",
+  "tags": [
+   "Market Size"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_accumulation/mstr_accumulation",
+  "title": "Strategy BTC Accumulation and Holdings",
+  "category": "Entities",
+  "tags": [
+   "BTC Balance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_aviv_bands/mstr_aviv_bands",
+  "title": "Strategy AVIV Ratio Valuation Bands",
+  "category": "Entities",
+  "tags": [
+   "AVIV Valuation Model"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_capitalraised/mstr_capitalraised",
+  "title": "Strategy USD Capital Raised",
+  "category": "Entities",
+  "tags": [
+   "Capital Raised"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_demandflow_comparison_30/mstr_demandflow_comparison_30",
+  "title": "Aggregate Capital Flows Into Bitcoin",
+  "category": "Entities",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_derivative_volatility/mstr_derivative_volatility",
+  "title": "Realised Volatility for MSTR Securities (30-day)",
+  "category": "Entities",
+  "tags": [
+   "Derivs"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_drawdown/mstr_drawdown",
+  "title": "Strategy vs Bitcoin Drawdown from ATH",
+  "category": "Entities",
+  "tags": [
+   "Drawdown"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_msty/mstr_msty",
+  "title": "MSTR vs MSTY Performance",
+  "category": "Entities",
+  "tags": [
+   "MSTY"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_mvrv_sth_vwap/mstr_mvrv_sth_vwap",
+  "title": "Strategy Short-Term Holder VWAP MVRV",
+  "category": "Entities",
+  "tags": [
+   "155d VWAP"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_mvrv/mstr_mvrv",
+  "title": "Strategy MVRV Ratio",
+  "category": "Entities",
+  "tags": [
+   "MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_performance_byyear_btc/mstr_performance_byyear_btc",
+  "title": "Strategy MSTR/BTC Performance by Year",
+  "category": "Entities",
+  "tags": [
+   "vs BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_performance_byyear_usd/mstr_performance_byyear_usd",
+  "title": "Strategy MSTR/USD Performance by Year",
+  "category": "Entities",
+  "tags": [
+   "vs USD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_premium_drawdown/mstr_premium_drawdown",
+  "title": "Strategy Premium Compression Potential",
+  "category": "Entities",
+  "tags": [
+   "Premium Drawdown"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_price_volume_0/mstr_price_volume_0",
+  "title": "Strategy MSTR Price and Volume [USD]",
+  "category": "Entities",
+  "tags": [
+   "USD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_price_volume_1/mstr_price_volume_1",
+  "title": "Strategy MSTR Price and Volume [BTC]",
+  "category": "Entities",
+  "tags": [
+   "BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_realised_volatility_vsbtc/mstr_realised_volatility_vsbtc",
+  "title": "Strategy Realized Volatility Ratio vs Bitcoin",
+  "category": "Entities",
+  "tags": [
+   "MSTR vs BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_realised_volatility/mstr_realised_volatility",
+  "title": "Strategy Realized Volatility",
+  "category": "Entities",
+  "tags": [
+   "MSTR Vol"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_stacking_permonth_0_M/mstr_stacking_permonth_0_M",
+  "title": "Strategy Bitcoin Accumulated by Month",
+  "category": "Entities",
+  "tags": [
+   "BTC 1M"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_stacking_permonth_0_Q/mstr_stacking_permonth_0_Q",
+  "title": "Strategy Bitcoin Accumulated by Quarter",
+  "category": "Entities",
+  "tags": [
+   "BTC 1Q"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_stacking_permonth_1_M/mstr_stacking_permonth_1_M",
+  "title": "Strategy Capital Raised by Month [USD]",
+  "category": "Entities",
+  "tags": [
+   "USD 1M"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_stacking_permonth_1_Q/mstr_stacking_permonth_1_Q",
+  "title": "Strategy Capital Raised by Quarter [USD]",
+  "category": "Entities",
+  "tags": [
+   "USD 1Q"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_supplyinprofit/mstr_supplyinprofit",
+  "title": "Strategy Supply in Profit/Loss",
+  "category": "Entities",
+  "tags": [
+   "Supply Profit/Loss"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_unrealisedinprofit/mstr_unrealisedinprofit",
+  "title": "Strategy Unrealised Profit/Loss",
+  "category": "Entities",
+  "tags": [
+   "Unrealised PnL"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_valuation_0/mstr_valuation_0",
+  "title": "Strategy Market Cap to Bitcoin Holdings",
+  "category": "Entities",
+  "tags": [
+   "Market Cap"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_valuation_1/mstr_valuation_1",
+  "title": "Strategy Market Cap to BTC Holdings Breakdown",
+  "category": "Entities",
+  "tags": [
+   "Dominance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_vsbtc_sthmvrv/mstr_vsbtc_sthmvrv",
+  "title": "Comparing Bitcoin and Strategy STH-MVRV Ratio",
+  "category": "Entities",
+  "tags": [
+   "vs BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstr_yield/mstr_yield",
+  "title": "Strategy Bitcoin Yield",
+  "category": "Entities",
+  "tags": [
+   "BTC Yield per Share"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/mstx_mstu/mstx_mstu",
+  "title": "Leveraged MSTR ETF Performance & Drawdowns",
+  "category": "Entities",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/msty_strk_strf_yield_msty/msty_strk_strf_yield_msty",
+  "title": "Comparing Yield Bearing MSTY Performance to MSTR",
+  "category": "Entities",
+  "tags": [
+   "MSTY Yield"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/msty_strk_strf_yield_strf/msty_strk_strf_yield_strf",
+  "title": "Comparing Yield Bearing STRF Performance to MSTR",
+  "category": "Entities",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/msty_strk_strf_yield_strk/msty_strk_strf_yield_strk",
+  "title": "Comparing Yield Bearing STRK Performance to MSTR",
+  "category": "Entities",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/preferred_prices/preferred_prices",
+  "title": "Price for MSTR Preferred Stocks",
+  "category": "Entities",
+  "tags": [
+   "Pref Prices"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/preferred_yields/preferred_yields",
+  "title": "Effective Yield for MSTR Preferred Stocks",
+  "category": "Entities",
+  "tags": [
+   "Pref Yields"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/entities/strkfd_summary_bars/strkfd_summary_bars",
+  "title": "Strategy Preferred Stock Performance Summary",
+  "category": "Entities",
+  "tags": [
+   "Summary"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/aggregate_volume_stacked/aggregate_volume_stacked",
+  "title": "Comparison of Aggregate Volume Metrics",
+  "category": "ETFs",
+  "tags": [
+   "Stacked"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/aggregate_volume/aggregate_volume",
+  "title": "Comparison of Aggregate Volume Metrics",
+  "category": "ETFs",
+  "tags": [
+   "Agg Volume"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_balance_0/etf_balance_0",
+  "title": "Bitcoin ETF AUM [BTC]",
+  "category": "ETFs",
+  "tags": [
+   "ETF Balances[BTC]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_balance_1/etf_balance_1",
+  "title": "Bitcoin ETF AUM [USD]",
+  "category": "ETFs",
+  "tags": [
+   "ETF Balances[USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_balance_2/etf_balance_2",
+  "title": "Bitcoin ETF AUM Dominance",
+  "category": "ETFs",
+  "tags": [
+   "Dominance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_cumflows/etf_cumflows",
+  "title": "Total Bitcoin ETF Cumulative Flows [USD]",
+  "category": "ETFs",
+  "tags": [
+   "Cumulative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_flows_0_1m/etf_flows_0_1m",
+  "title": "Bitcoin ETF Monthly Flows [BTC]",
+  "category": "ETFs",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_flows_0_1w/etf_flows_0_1w",
+  "title": "Bitcoin ETF Weekly Flows [BTC]",
+  "category": "ETFs",
+  "tags": [
+   "1w BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_flows_0/etf_flows_0",
+  "title": "Bitcoin ETF Daily Flows [BTC]",
+  "category": "ETFs",
+  "tags": [
+   "ETF Flows [BTC]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_flows_1_1m/etf_flows_1_1m",
+  "title": "Bitcoin ETF Monthly Flows [USD]",
+  "category": "ETFs",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_flows_1_1w/etf_flows_1_1w",
+  "title": "Bitcoin ETF Weekly Flows [USD]",
+  "category": "ETFs",
+  "tags": [
+   "1w USD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_flows_1/etf_flows_1",
+  "title": "Bitcoin ETF Daily Flows [USD]",
+  "category": "ETFs",
+  "tags": [
+   "ETF Flows [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_flows_profitloss_1_1d/etf_flows_profitloss_1_1d",
+  "title": "Bitcoin ETF Daily Flows [USD] In Profit/Loss",
+  "category": "ETFs",
+  "tags": [
+   "1d PnL"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_flows_profitloss_1_1w/etf_flows_profitloss_1_1w",
+  "title": "Bitcoin ETF Weekly Flows [USD] In Profit/Loss",
+  "category": "ETFs",
+  "tags": [
+   "1w PnL"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_flowsvsprice/etf_flowsvsprice",
+  "title": "ETF Flows vs Price Change",
+  "category": "ETFs",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_mvrv/etf_mvrv",
+  "title": "Bitcoin ETF Average Inflow Cost Basis and MVRV",
+  "category": "ETFs",
+  "tags": [
+   "MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_volume_1w/etf_volume_1w",
+  "title": "Bitcoin ETF Weekly Trade Volume",
+  "category": "ETFs",
+  "tags": [
+   "ETF Volume [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_volume/etf_volume",
+  "title": "Bitcoin ETF Daily Trade Volume",
+  "category": "ETFs",
+  "tags": [
+   "1d Volume"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/etf_vs_cme_0/etf_vs_cme_0",
+  "title": "Bitcoin ETF Flows vs CME Open Interest [BTC]",
+  "category": "ETFs",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/ibit_balance_vs_options/ibit_balance_vs_options",
+  "title": "IBIT ETF Balance vs Options Open Interest",
+  "category": "ETFs",
+  "tags": [
+   "AUM vs Options OI"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/monochrome/monochrome",
+  "title": "Monochrome IBTC Bitcoin ETF AUM",
+  "category": "ETFs",
+  "tags": [
+   "🇦🇺Monochrome IBTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/etfs/scatter_etf_flows_vsprice/scatter_etf_flows_vsprice",
+  "title": "Bitcoin ETF Flows vs Price Performance 7-day",
+  "category": "ETFs",
+  "tags": [
+   "View Chart!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/exchange/exchange_balances_btc/exchange_balances_btc",
+  "title": "Exchange Balances",
+  "category": "Exchanges",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/exchange/exchange_balances_usd/exchange_balances_usd",
+  "title": "Exchange Balances",
+  "category": "Exchanges",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/exchange/exchange_flows_btc/exchange_flows_btc",
+  "title": "Exchange Inflows and Outflows",
+  "category": "Exchanges",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/exchange/exchange_flows_usd/exchange_flows_usd",
+  "title": "Exchange Inflows and Outflows",
+  "category": "Exchanges",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/binarycdd_zscore/binarycdd_zscore",
+  "title": "Binary Coin-days Destroyed Z-Score",
+  "category": "Lifespan",
+  "tags": [
+   "Market"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/binarycdd_zscorelth/binarycdd_zscorelth",
+  "title": "Long-Term Holder Binary Coin-days Destroyed Z-Score",
+  "category": "Lifespan",
+  "tags": [
+   "LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/binarycdd_zscoresth/binarycdd_zscoresth",
+  "title": "Short-Term Holder Binary Coin-days Destroyed Z-Score",
+  "category": "Lifespan",
+  "tags": [
+   "STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/binarycdd/binarycdd",
+  "title": "Binary Coin-days Destroyed",
+  "category": "Lifespan",
+  "tags": [
+   "BCDD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/cdd_bycohort_0/cdd_bycohort_0",
+  "title": "Bitcoin Coindays Destroyed (30-sum)",
+  "category": "Lifespan",
+  "tags": [
+   "by Cohort"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/cdd/cdd",
+  "title": "Bitcoin Coin-days Destroyed",
+  "category": "Lifespan",
+  "tags": [
+   "CDD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/cdd90_lthsth/cdd90_lthsth",
+  "title": "Bitcoin Coin-days Destroyed 90-day Sum by Cohort",
+  "category": "Lifespan",
+  "tags": [
+   "CDD-90"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/coinday_nvtrvt/coinday_nvtrvt",
+  "title": "Bitcoin Coinday NVT and RVT Ratio",
+  "category": "Lifespan",
+  "tags": [
+   "Market"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/coinday_nvtrvtlth/coinday_nvtrvtlth",
+  "title": "Bitcoin Long-Term Holder Coinday NVT and RVT Ratio",
+  "category": "Lifespan",
+  "tags": [
+   "LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/coinday_nvtrvtsth/coinday_nvtrvtsth",
+  "title": "Bitcoin Short-Term Holder Coinday NVT and RVT Ratio",
+  "category": "Lifespan",
+  "tags": [
+   "STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/reserverisk/reserverisk",
+  "title": "Bitcoin Reserve Risk",
+  "category": "Lifespan",
+  "tags": [
+   "View Chart!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/lifespan/vddmultiple/vddmultiple",
+  "title": "Bitcoin Value Days Destroyed Multiple",
+  "category": "Lifespan",
+  "tags": [
+   "View Chart!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/difficultyadjustment/difficultyadjustment",
+  "title": "The Difficulty Adjustment",
+  "category": "Mining",
+  "tags": [
+   "Difficulty Adjustment"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/difficultyperissuance/difficultyperissuance",
+  "title": "Difficulty per Issuance Model (Estimated Avg Production Price)",
+  "category": "Mining",
+  "tags": [
+   "Difficulty per Issuance Model"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/difficultyregression/difficultyregression",
+  "title": "Difficulty Regression Model (Estimated Avg Production Price)",
+  "category": "Mining",
+  "tags": [
+   "Difficulty Regression Price"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/hashprice/hashprice",
+  "title": "Hash Price and Miner Revenue",
+  "category": "Mining",
+  "tags": [
+   "View Chart!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/hashrate_change/hashrate_change",
+  "title": "Hashrate Net Position Change (30-day)",
+  "category": "Mining",
+  "tags": [
+   "30d Change"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/hashribbons/hashribbons",
+  "title": "Hash Ribbons",
+  "category": "Mining",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/miner_revenue/miner_revenue",
+  "title": "Miner Revenue",
+  "category": "Mining",
+  "tags": [
+   "View Chart!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/minerprofitabledays/minerprofitabledays",
+  "title": "Estimated Number of Profitable Days for Miners",
+  "category": "Mining",
+  "tags": [
+   "Estimated Profitable Mining Days"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/mining_thermocap/mining_thermocap",
+  "title": "Bitcoin Thermocap and Monetary Premium over Production Cost",
+  "category": "Mining",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/miningpulse/miningpulse",
+  "title": "The Mining Pulse",
+  "category": "Mining",
+  "tags": [
+   "Mining Pules"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/puellmultiple/puellmultiple",
+  "title": "The Puell Multiple",
+  "category": "Mining",
+  "tags": [
+   "Puell Multiple"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/mining/revenuevscost/revenuevscost",
+  "title": "Miner Revenue vs Estimated Production Expense",
+  "category": "Mining",
+  "tags": [
+   "Mining Revenue vs Cost of Production"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/hodlers_dashboard/hodlers_dashboard",
+  "title": "Bitcoin HODLers Dashboard",
+  "category": "Premium",
+  "tags": [
+   "HODLers Dashboard"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/price_ibit_options_delta/price_ibit_options_delta",
+  "title": "Price and IBIT Options Delta Profile",
+  "category": "Premium",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/price_ibit_options_open_interest/price_ibit_options_open_interest",
+  "title": "Price and IBIT Options Open interest Profile",
+  "category": "Premium",
+  "tags": [
+   "OI Price"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/price_urpd/price_urpd",
+  "title": "Price and Onchain Value Profile",
+  "category": "Premium",
+  "tags": [
+   "Price"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/urpd_heatmap_diff_14/urpd_heatmap_diff_14",
+  "title": "Supply Delta Heatmap (14-day)",
+  "category": "Premium",
+  "tags": [
+   "14d"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/urpd_heatmap_diff_30/urpd_heatmap_diff_30",
+  "title": "Supply Delta Heatmap (30-day)",
+  "category": "Premium",
+  "tags": [
+   "30d"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/urpd_heatmap_diff_7/urpd_heatmap_diff_7",
+  "title": "Supply Delta Heatmap (7-day)",
+  "category": "Premium",
+  "tags": [
+   "7d"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/urpd_heatmap_diff_90/urpd_heatmap_diff_90",
+  "title": "Supply Delta Heatmap (90-day)",
+  "category": "Premium",
+  "tags": [
+   "90d"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/urpd_heatmap_realized_value/urpd_heatmap_realized_value",
+  "title": "Realised Value Distribution Heatmap",
+  "category": "Premium",
+  "tags": [
+   "Realised"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/urpd_heatmap_supply_lth/urpd_heatmap_supply_lth",
+  "title": "Long-Term Holder Supply Distribution Heatmap",
+  "category": "Premium",
+  "tags": [
+   "LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/urpd_heatmap_supply_sth/urpd_heatmap_supply_sth",
+  "title": "Short-Term Holder Supply Distribution Heatmap",
+  "category": "Premium",
+  "tags": [
+   "STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/urpd_heatmap_supply/urpd_heatmap_supply",
+  "title": "Supply Distribution Heatmap",
+  "category": "Premium",
+  "tags": [
+   "Supply"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/premium/urpd_heatmap_unrealized_value/urpd_heatmap_unrealized_value",
+  "title": "Unrealised Value Distribution Heatmap",
+  "category": "Premium",
+  "tags": [
+   "Unrealised PnL"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/btmmodels/btmmodels",
+  "title": "Bear Market Floor Price Models",
+  "category": "Pricing Models",
+  "tags": [
+   "Bear Floors"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/consecutivedays_mvrv_sth/consecutivedays_mvrv_sth",
+  "title": "MVRV STH Consecutive Days",
+  "category": "Pricing Models",
+  "tags": [
+   "STH-MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/consecutivedays_mvrv/consecutivedays_mvrv",
+  "title": "MVRV Consecutive Days",
+  "category": "Pricing Models",
+  "tags": [
+   "MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/consecutivedays_sopr_sth/consecutivedays_sopr_sth",
+  "title": "SOPR STH Consecutive Days",
+  "category": "Pricing Models",
+  "tags": [
+   "STH-SOPR"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/consecutivedays_sopr/consecutivedays_sopr",
+  "title": "SOPR Consecutive Days",
+  "category": "Pricing Models",
+  "tags": [
+   "SOPR"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/drawdown_infadj/drawdown_infadj",
+  "title": "Inflation Adjusted Drawdown (2020 Dollars)",
+  "category": "Pricing Models",
+  "tags": [
+   "Drawdown"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/histogram_mayermultiple/histogram_mayermultiple",
+  "title": "Mayer Multiple Distribution",
+  "category": "Pricing Models",
+  "tags": [
+   "Hist"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/histogram_mvrv_zscore_bullbear_Mayer/histogram_mvrv_zscore_bullbear_Mayer",
+  "title": "Mayer Multiple Z-Score Histogram",
+  "category": "Pricing Models",
+  "tags": [
+   "Histogram: Mayer Multiple"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/histogram_mvrv_zscore_Mayer_zscore/histogram_mvrv_zscore_Mayer_zscore",
+  "title": "Mayer_zscore Z-Score Histogram",
+  "category": "Pricing Models",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/ism_pmi_bitcoin/ism_pmi_bitcoin",
+  "title": "Bitcoin Log-Regression vs ISM PMIs",
+  "category": "Pricing Models",
+  "tags": [
+   "vs PMIs"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/marketcap_w/marketcap_w",
+  "title": "Bitcoin Daily Market Cap",
+  "category": "Pricing Models",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/meanreversion_bystrike/meanreversion_bystrike",
+  "title": "Bitcoin Mean Reversion Index by Strike Price (Latest)",
+  "category": "Pricing Models",
+  "tags": [
+   "Index By Strike"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/meanreversion_index/meanreversion_index",
+  "title": "Bitcoin Mean Reversion Index",
+  "category": "Pricing Models",
+  "tags": [
+   "Mean Reversion Index"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/price_d/price_d",
+  "title": "Bitcoin Daily Price",
+  "category": "Pricing Models",
+  "tags": [
+   "D"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/price_drawdown/price_drawdown",
+  "title": "Potential Price Drawdown From ATH",
+  "category": "Pricing Models",
+  "tags": [
+   "Drawdown"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/price_infadj_0/price_infadj_0",
+  "title": "Bitcoin Inflation Adjusted Price (Todays Dollars)",
+  "category": "Pricing Models",
+  "tags": [
+   "Today"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/price_infadj_1/price_infadj_1",
+  "title": "Bitcoin Inflation Adjusted Price (2010 Dollars)",
+  "category": "Pricing Models",
+  "tags": [
+   "2010"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/price_infadj_2/price_infadj_2",
+  "title": "Bitcoin Inflation Adjusted Price (2020 Dollars)",
+  "category": "Pricing Models",
+  "tags": [
+   "2020"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/price_log/price_log",
+  "title": "Bitcoin Price",
+  "category": "Pricing Models",
+  "tags": [
+   "Price"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/price_m/price_m",
+  "title": "Bitcoin Monthly Price",
+  "category": "Pricing Models",
+  "tags": [
+   "M"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/price_q/price_q",
+  "title": "Bitcoin Quarterly Price",
+  "category": "Pricing Models",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/price_w/price_w",
+  "title": "Bitcoin Weekly Price",
+  "category": "Pricing Models",
+  "tags": [
+   "W"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/price_y/price_y",
+  "title": "Bitcoin Yearly Price",
+  "category": "Pricing Models",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/price/price",
+  "title": "Bitcoin Price",
+  "category": "Pricing Models",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricediscovery_last/pricediscovery_last",
+  "title": "STH Price Discovery Price Models",
+  "category": "Pricing Models",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricediscovery/pricediscovery",
+  "title": "STH Price Discovery Price Models",
+  "category": "Pricing Models",
+  "tags": [
+   "Discovery"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_costbasisoriginals_oscillators/pricing_costbasisoriginals_oscillators",
+  "title": "Key Cost Basis Models Price Models",
+  "category": "Pricing Models",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_costbasisoriginals/pricing_costbasisoriginals",
+  "title": "Key Cost Basis Models Price Models",
+  "category": "Pricing Models",
+  "tags": [
+   "Key Cost Basis!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_euphoriazone/pricing_euphoriazone",
+  "title": "The Bitcoin Euphoria Zone",
+  "category": "Pricing Models",
+  "tags": [
+   "View Chart!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_investortool/pricing_investortool",
+  "title": "Investor Tool",
+  "category": "Pricing Models",
+  "tags": [
+   "The Investor Tool"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_magiclines/pricing_magiclines",
+  "title": "Bitcoin's Magic lines",
+  "category": "Pricing Models",
+  "tags": [
+   "Magic Lines"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_mayermultiple_zscore/pricing_mayermultiple_zscore",
+  "title": "The Mayer Multiple Z-score",
+  "category": "Pricing Models",
+  "tags": [
+   "Z-Score"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_mayermultiple/pricing_mayermultiple",
+  "title": "The Mayer Multiple",
+  "category": "Pricing Models",
+  "tags": [
+   "Mayer Multiple"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_mrktreal_ath/pricing_mrktreal_ath",
+  "title": "Market and Realised Cap",
+  "category": "Pricing Models",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_mvrv_bands/pricing_mvrv_bands",
+  "title": "MVRV Pricing Bands",
+  "category": "Pricing Models",
+  "tags": [
+   "Realized Price and MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_nvtprice/pricing_nvtprice",
+  "title": "NVT Price Models",
+  "category": "Pricing Models",
+  "tags": [
+   "NVT Price Model"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_onchainoriginals/pricing_onchainoriginals",
+  "title": "Onchain Originals Price Models",
+  "category": "Pricing Models",
+  "tags": [
+   "Onchain Originals"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_picycleindicator/pricing_picycleindicator",
+  "title": "Pi Cycle Top Indicator",
+  "category": "Pricing Models",
+  "tags": [
+   "Pi Cycle Top"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_powerlaw_porkopolis/pricing_powerlaw_porkopolis",
+  "title": "Bitcoin Power Law (After Porkopolis Economics)",
+  "category": "Pricing Models",
+  "tags": [
+   "Power Law"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_powerlaw/pricing_powerlaw",
+  "title": "Bitcoin Price",
+  "category": "Pricing Models",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_price_fibs_2019/pricing_price_fibs_2019",
+  "title": "Bitcoin Price & Fibonacci Retracements (2019)",
+  "category": "Pricing Models",
+  "tags": [
+   "2019"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_price_fibs_2021_22/pricing_price_fibs_2021_22",
+  "title": "Bitcoin Price & Fibonacci Retracements (2021-22 Cycle)",
+  "category": "Pricing Models",
+  "tags": [
+   "Mar-20"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_price_fibs_2021_bull/pricing_price_fibs_2021_bull",
+  "title": "Bitcoin Price & Fibonacci Retracements (March 2020)",
+  "category": "Pricing Models",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_price_fibs_2021_rally/pricing_price_fibs_2021_rally",
+  "title": "Bitcoin Price & Fibonacci Retracements (2021 Bull)",
+  "category": "Pricing Models",
+  "tags": [
+   "2021"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_price_fibs_2022_bear/pricing_price_fibs_2022_bear",
+  "title": "Bitcoin Price & Fibonacci Retracements (2022 Bear)",
+  "category": "Pricing Models",
+  "tags": [
+   "2022"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_price_fibs_2023_24/pricing_price_fibs_2023_24",
+  "title": "Bitcoin Price & Fibonacci Retracements (2023-24)",
+  "category": "Pricing Models",
+  "tags": [
+   "FTX"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_price_fibs_2024_chop/pricing_price_fibs_2024_chop",
+  "title": "Bitcoin Price & Fibonacci Retracements (2024 Chop)",
+  "category": "Pricing Models",
+  "tags": [
+   "2024-Chop"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_price_fibs_today/pricing_price_fibs_today",
+  "title": "Bitcoin Price & Fibonacci Retracements (Today)",
+  "category": "Pricing Models",
+  "tags": [
+   "Now"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_realisedcap/pricing_realisedcap",
+  "title": "The Realised Cap",
+  "category": "Pricing Models",
+  "tags": [
+   "RCap"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricing_yearlycostbasis/pricing_yearlycostbasis",
+  "title": "Yearly Volume Weighted Cost Basis",
+  "category": "Pricing Models",
+  "tags": [
+   "View Chart!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/production_premium/production_premium",
+  "title": "Monetary Premium over Cost of Production",
+  "category": "Pricing Models",
+  "tags": [
+   "Monetary Premium"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/quantiles_200dma/quantiles_200dma",
+  "title": "Bitcoin 200-day MA Quantile Regression",
+  "category": "Pricing Models",
+  "tags": [
+   "200D Quantiles"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/quantiles_200wma/quantiles_200wma",
+  "title": "Bitcoin 200-week MA Quantile Regression",
+  "category": "Pricing Models",
+  "tags": [
+   "200W Quantiles"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/quantiles_powerlaw/quantiles_powerlaw",
+  "title": "Bitcoin Porkopolis Power Law Quantile Regression",
+  "category": "Pricing Models",
+  "tags": [
+   "Quantiles"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/quantiles_pricetruemean/quantiles_pricetruemean",
+  "title": "Bitcoin True Market Mean Quantile Regression",
+  "category": "Pricing Models",
+  "tags": [
+   "Quantiles"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/quantiles_realizedprice_sth/quantiles_realizedprice_sth",
+  "title": "Bitcoin STH Cost Basis Quantile Regression",
+  "category": "Pricing Models",
+  "tags": [
+   "Quantiles"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/quantiles_realizedprice/quantiles_realizedprice",
+  "title": "Bitcoin Realised Price Quantile Regression",
+  "category": "Pricing Models",
+  "tags": [
+   "Quantiles"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/topmodels/topmodels",
+  "title": "Topping Cloud Price Models",
+  "category": "Pricing Models",
+  "tags": [
+   "Topping"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/topping_bands_aviv_730/topping_bands_aviv_730",
+  "title": "AVIV-Z Top Pricing Bands 730d",
+  "category": "Pricing Models",
+  "tags": [
+   "AVIV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/topping_bands_mayer_730/topping_bands_mayer_730",
+  "title": "Mayer Multiple-Z Top Pricing Bands 730d",
+  "category": "Pricing Models",
+  "tags": [
+   "Mayer"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/topping_bands_mvrv_730/topping_bands_mvrv_730",
+  "title": "MVRV-Z Top Pricing Bands 730d",
+  "category": "Pricing Models",
+  "tags": [
+   "MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/topping_bands_mvrv_sth_730/topping_bands_mvrv_sth_730",
+  "title": "STH-MVRV-Z Top Pricing Bands 730d",
+  "category": "Pricing Models",
+  "tags": [
+   "STH-MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/histogram_sopr_bullbear_sopr_lth_z/histogram_sopr_bullbear_sopr_lth_z",
+  "title": "LTH-SOPR Z-Score Bull and Bear Histogram",
+  "category": "Realised P/L",
+  "tags": [
+   "LTH-Hist"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/histogram_sopr_bullbear_sopr_lth/histogram_sopr_bullbear_sopr_lth",
+  "title": "LTH-SOPR Bull and Bear Histogram",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/histogram_sopr_bullbear_sopr_sth_z/histogram_sopr_bullbear_sopr_sth_z",
+  "title": "STH-SOPR Z-Score Bull and Bear Histogram",
+  "category": "Realised P/L",
+  "tags": [
+   "STH-Hist"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/histogram_sopr_bullbear_sopr_sth/histogram_sopr_bullbear_sopr_sth",
+  "title": "STH-SOPR Bull and Bear Histogram",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/histogram_sopr_bullbear_sopr_z/histogram_sopr_bullbear_sopr_z",
+  "title": "SOPR Z-Score Bull and Bear Histogram",
+  "category": "Realised P/L",
+  "tags": [
+   "Histogram"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/histogram_sopr_bullbear_sopr/histogram_sopr_bullbear_sopr",
+  "title": "SOPR Bull and Bear Histogram",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/histogram_sopr_lth/histogram_sopr_lth",
+  "title": "SOPR_LTH Histogram",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/histogram_sopr_sth/histogram_sopr_sth",
+  "title": "SOPR_STH Histogram",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/histogram_sopr/histogram_sopr",
+  "title": "SOPR Histogram",
+  "category": "Realised P/L",
+  "tags": [
+   "Histogram: SOPR"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/lthsopr_indicator/lthsopr_indicator",
+  "title": "Long-Term Holder LTH-SOPR Indicator",
+  "category": "Realised P/L",
+  "tags": [
+   "LTH-MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/netrealisedpnl_btc/netrealisedpnl_btc",
+  "title": "Net Realised Profit/Loss [BTC]",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/netrealisedpnl_momentum_0/netrealisedpnl_momentum_0",
+  "title": "Net Realised Profit/Loss Momentum",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/netrealisedpnl_momentum_1/netrealisedpnl_momentum_1",
+  "title": "Net Realised Profit Momentum",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/netrealisedpnl_momentum_2/netrealisedpnl_momentum_2",
+  "title": "Net Realised Loss Momentum",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/netrealisedpnl_usd/netrealisedpnl_usd",
+  "title": "Net Realised Profit/Loss [USD]",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/netrealisedpnl/netrealisedpnl",
+  "title": "Net Realized Profit Ratio",
+  "category": "Realised P/L",
+  "tags": [
+   "Net Realized Profit/Ratio"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/netsellsideriskratio/netsellsideriskratio",
+  "title": "Net Sell-side Risk Ratio",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/rcapnetposchange/rcapnetposchange",
+  "title": "Realised Cap Net Position Change (%)",
+  "category": "Realised P/L",
+  "tags": [
+   "Realised Cap 30-day Change"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realised_drawdowns_bull_realisedloss/realised_drawdowns_bull_realisedloss",
+  "title": "Realised Profit During Bull Markets",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_0/realisedpnl_0",
+  "title": "Realised Profit and Loss [USD]",
+  "category": "Realised P/L",
+  "tags": [
+   "USD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_1/realisedpnl_1",
+  "title": "Realised Profit and Loss [BTC]",
+  "category": "Realised P/L",
+  "tags": [
+   "BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_2/realisedpnl_2",
+  "title": "Realised Profit and Loss [BTC]",
+  "category": "Realised P/L",
+  "tags": [
+   "Both"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_bycohort_0/realisedpnl_bycohort_0",
+  "title": "Realised Loss by Cohort [BTC]",
+  "category": "Realised P/L",
+  "tags": [
+   "Loss"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_bycohort_1/realisedpnl_bycohort_1",
+  "title": "Realised Profit by Cohort [BTC]",
+  "category": "Realised P/L",
+  "tags": [
+   "Profit"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_bycohort_2/realisedpnl_bycohort_2",
+  "title": "Realised Profit and Loss by Cohort [BTC]",
+  "category": "Realised P/L",
+  "tags": [
+   "Cohort"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_bycohort_bands_lth/realisedpnl_bycohort_bands_lth",
+  "title": "Long Term Holder Bitcoin Realised Profit/Loss",
+  "category": "Realised P/L",
+  "tags": [
+   "LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_bycohort_bands_sth/realisedpnl_bycohort_bands_sth",
+  "title": "Short Term Holder Bitcoin Realised Profit/Loss",
+  "category": "Realised P/L",
+  "tags": [
+   "STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_bycohort_bands/realisedpnl_bycohort_bands",
+  "title": "Bitcoin Realised Profit/Loss",
+  "category": "Realised P/L",
+  "tags": [
+   "Market"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_bycohort_dominance/realisedpnl_bycohort_dominance",
+  "title": "Realised Profit/Loss Dominance by Cohort",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_ratio_all/realisedpnl_ratio_all",
+  "title": "Realised Profit/Loss Ratio",
+  "category": "Realised P/L",
+  "tags": [
+   "Market"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_ratio_lth/realisedpnl_ratio_lth",
+  "title": "Long-Term Holder Realised Profit/Loss Ratio",
+  "category": "Realised P/L",
+  "tags": [
+   "LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/realisedpnl_ratio_sth/realisedpnl_ratio_sth",
+  "title": "Short-Term Holder Realised Profit/Loss Ratio",
+  "category": "Realised P/L",
+  "tags": [
+   "P/L"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sellsideriskratio_all_impliedvol/sellsideriskratio_all_impliedvol",
+  "title": "Sell-side Risk Ratio vs Options Implied Volatility",
+  "category": "Realised P/L",
+  "tags": [
+   "Sell-side Risk vs Implied Vol"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sellsideriskratio_all/sellsideriskratio_all",
+  "title": "Sell-side Risk Ratio",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sellsideriskratio_lth/sellsideriskratio_lth",
+  "title": "Long-Term Holder Sell-side Risk Ratio",
+  "category": "Realised P/L",
+  "tags": [
+   "LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sellsideriskratio_net/sellsideriskratio_net",
+  "title": "Net Sell-side Risk Ratio",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sellsideriskratio_sth/sellsideriskratio_sth",
+  "title": "Short-Term Holder Sell-side Risk Ratio",
+  "category": "Realised P/L",
+  "tags": [
+   "STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/signal_realisedpnl_momentum_all/signal_realisedpnl_momentum_all",
+  "title": "Realised Profit/Loss Momentum",
+  "category": "Realised P/L",
+  "tags": [
+   "Market Signal"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/signal_realisedpnl_momentum_lth/signal_realisedpnl_momentum_lth",
+  "title": "Long-Term Holder Realised Profit/Loss Momentum",
+  "category": "Realised P/L",
+  "tags": [
+   "Sig-LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/signal_realisedpnl_momentum_sth/signal_realisedpnl_momentum_sth",
+  "title": "Short-Term Holder Realised Profit/Loss Momentum",
+  "category": "Realised P/L",
+  "tags": [
+   "Sig-STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sopr_fundingrate/sopr_fundingrate",
+  "title": "Annualised Futures Funding Rates vs SOPR",
+  "category": "Realised P/L",
+  "tags": [
+   "FR vs SOPR"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sopr_lth_zscore/sopr_lth_zscore",
+  "title": "LTH-SOPR Z-Score",
+  "category": "Realised P/L",
+  "tags": [
+   "Z-Score"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sopr_sth_zscore/sopr_sth_zscore",
+  "title": "STH-SOPR Z-Score",
+  "category": "Realised P/L",
+  "tags": [
+   "Z-Score"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sopr_zscore/sopr_zscore",
+  "title": "SOPR Z-Score",
+  "category": "Realised P/L",
+  "tags": [
+   "Z-Score"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sopr/sopr",
+  "title": "Spent Output Profit Ratio (SOPR)",
+  "category": "Realised P/L",
+  "tags": [
+   "SOPR"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sthlthsopr_ratio/sthlthsopr_ratio",
+  "title": "Short-to-Long-Term Holder SOPR Ratio",
+  "category": "Realised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/realised/sthsopr_indicator/sthsopr_indicator",
+  "title": "Short-Term Holder STH-SOPR Indicator",
+  "category": "Realised P/L",
+  "tags": [
+   "STH-SOPR"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoin_dominance_actadr_0/stablecoin_dominance_actadr_0",
+  "title": "Stablecoin Active Address Count",
+  "category": "Stablecoins",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoin_dominance_actadr_1/stablecoin_dominance_actadr_1",
+  "title": "Stablecoin Active Address Dominance",
+  "category": "Stablecoins",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoin_dominance_nonzerobal_0/stablecoin_dominance_nonzerobal_0",
+  "title": "Stablecoin Non-Zero Address Count",
+  "category": "Stablecoins",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoin_dominance_nonzerobal_1/stablecoin_dominance_nonzerobal_1",
+  "title": "Stablecoin Non-Zero Address Dominance",
+  "category": "Stablecoins",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoin_dominance_supply_0/stablecoin_dominance_supply_0",
+  "title": "Aggregate Stablecoin Supply",
+  "category": "Stablecoins",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoin_dominance_supply_1/stablecoin_dominance_supply_1",
+  "title": "Stablecoin Supply Dominance",
+  "category": "Stablecoins",
+  "tags": [
+   "Relative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoin_dominance_txcnt_0/stablecoin_dominance_txcnt_0",
+  "title": "Stablecoin Transaction Counts",
+  "category": "Stablecoins",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoin_dominance_txcnt_1/stablecoin_dominance_txcnt_1",
+  "title": "Stablecoin Transaction Count Dominance",
+  "category": "Stablecoins",
+  "tags": [
+   "Relative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoin_netposchange_30/stablecoin_netposchange_30",
+  "title": "Stablecoin Net Position Change",
+  "category": "Stablecoins",
+  "tags": [
+   "Stablecoins"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoins_ssr_channel/stablecoins_ssr_channel",
+  "title": "Stablecoin Ratio Channel",
+  "category": "Stablecoins",
+  "tags": [
+   "RSI Channel"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoins_ssr_oscillator/stablecoins_ssr_oscillator",
+  "title": "Stablecoin Supply Ratio Oscillator",
+  "category": "Stablecoins",
+  "tags": [
+   "Oscillator"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/stablecoins/stablecoins_ssr/stablecoins_ssr",
+  "title": "Stablecoin Supply Ratio (SSR)",
+  "category": "Stablecoins",
+  "tags": [
+   "SSR"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/address_count_bytxtype_0/address_count_bytxtype_0",
+  "title": "Address Count by Script Type",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Addr"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/address_count_bytxtype_1/address_count_bytxtype_1",
+  "title": "Address Count by Script Type",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Addr %"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/address_waves/address_waves",
+  "title": "Address Distribution Bands",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/binaryspending_indicator/binaryspending_indicator",
+  "title": "Long-Term Holder Binary Spending Indicator",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Spending"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/breakdown_age_0/breakdown_age_0",
+  "title": "Supply Breakdown [BTC]",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/breakdown_age_1/breakdown_age_1",
+  "title": "Supply Breakdown (Relative)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Supply Breakdown"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/breakdown_lthsth_0/breakdown_lthsth_0",
+  "title": "Bitcoin Supply Breakdown by Long/Short-Term Holders",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Supply"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/breakdown_lthsth_1/breakdown_lthsth_1",
+  "title": "Bitcoin Supply Breakdown by Long/Short-Term Holders",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Long/Short-Term Supply"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/breakdown_lthsth_pnl_0/breakdown_lthsth_pnl_0",
+  "title": "Supply Held in Profit/Loss by Cohort",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/breakdown_lthsth_pnl_1/breakdown_lthsth_pnl_1",
+  "title": "Relative Supply Held in Profit/Loss by Cohort",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Relative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/breakdown_pnl/breakdown_pnl",
+  "title": "Supply in Profit or Loss",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Abs"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/circulating_issuance_eth/circulating_issuance_eth",
+  "title": "Ethereum Circulating Supply and Issuance",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/circulating_issuance/circulating_issuance",
+  "title": "Circulating Supply and Issuance",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/circulating_volume/circulating_volume",
+  "title": "Circulating Supply vs Transfer Volume",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Vs Volume"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/circulating/circulating",
+  "title": "Circulating Supply",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_absorptionrate_30/distribution_absorptionrate_30",
+  "title": "Entity Absorption Rate (30-day)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Absorption Rates (30-day)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_absorptionrate_365/distribution_absorptionrate_365",
+  "title": "Entity Absorption Rate (365-day)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Absorption Rates (365-day)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_fishshark_30/distribution_fishshark_30",
+  "title": "Fish and Sharks (10-1k BTC) Balance Change (30-day)",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_fishshark_365/distribution_fishshark_365",
+  "title": "Fish and Sharks (10-1k BTC) Balance Change (365-day)",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_fishshark_90/distribution_fishshark_90",
+  "title": "Fish and Sharks (10-1k BTC) Balance Change (90-day)",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_netposchange_30/distribution_netposchange_30",
+  "title": "Entity Balance Net Position Change (30-day)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Wallet Net Position Change (30-day)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_netposchange_365/distribution_netposchange_365",
+  "title": "Entity Balance Net Position Change (365-day)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Wallet Net Position Change (365-day)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_sharkwhalexchange_30/distribution_sharkwhalexchange_30",
+  "title": "Sharks, Whales and Exchanges (>100 BTC) Balance Change (30-day)",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_sharkwhalexchange_365/distribution_sharkwhalexchange_365",
+  "title": "Sharks, Whales and Exchanges (>100 BTC) Balance Change (365-day)",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_sharkwhalexchange_90/distribution_sharkwhalexchange_90",
+  "title": "Sharks, Whales and Exchanges (>100 BTC) Balance Change (90-day)",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_shrimpcrabfish_30/distribution_shrimpcrabfish_30",
+  "title": "Retail Holder (",
+  "category": "Supply Dynamics",
+  "tags": [
+   "30-day"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_shrimpcrabfish_365/distribution_shrimpcrabfish_365",
+  "title": "Retail Holder (",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_shrimpcrabfish_90/distribution_shrimpcrabfish_90",
+  "title": "Retail Holder (",
+  "category": "Supply Dynamics",
+  "tags": [
+   "90-day"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_waves_0/distribution_waves_0",
+  "title": "Supply Held by Wallet Size",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_waves_1/distribution_waves_1",
+  "title": "Supply Held by Wallet Size",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Wallet Waves"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_whalexchange_30/distribution_whalexchange_30",
+  "title": "Whales and Exchanges (>1k BTC) Balance Change (30-day)",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_whalexchange_365/distribution_whalexchange_365",
+  "title": "Whales and Exchanges (>1k BTC) Balance Change (365-day)",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/distribution_whalexchange_90/distribution_whalexchange_90",
+  "title": "Whales and Exchanges (>1k BTC) Balance Change (90-day)",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/hodl_waves_0/hodl_waves_0",
+  "title": "The HODL Waves",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Supply (BTC)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/hodl_waves_1/hodl_waves_1",
+  "title": "The HODL Waves",
+  "category": "Supply Dynamics",
+  "tags": [
+   "HODL Waves"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/lthnetposchange_0/lthnetposchange_0",
+  "title": "Long-Term Holder Supply Net Position Change (30-day)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "LTH Supply Net Position Change"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/lthnetposchange_1/lthnetposchange_1",
+  "title": "Long-Term Holder Supply Net Position Change (30-day)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "30d [%]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/older6m_0/older6m_0",
+  "title": "Supply Older Than 6-months",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Supply Older than 1yr+"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/older6m_1/older6m_1",
+  "title": "Supply Older Than 6-months",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Relative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/rcap_hodlwave_bycohort/rcap_hodlwave_bycohort",
+  "title": "Long/Short Term Holder RCap HODL Waves",
+  "category": "Supply Dynamics",
+  "tags": [
+   "LTH/STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/rcaphodl_waves_0/rcaphodl_waves_0",
+  "title": "The Realised Cap HODL Waves",
+  "category": "Supply Dynamics",
+  "tags": [
+   "RCap (USD)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/rcaphodl_waves_1/rcaphodl_waves_1",
+  "title": "The Realised Cap HODL Waves",
+  "category": "Supply Dynamics",
+  "tags": [
+   "RCap (%)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/rcapyear_waves_0/rcapyear_waves_0",
+  "title": "The Realised Cap HODL Waves by Year Acquired",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Year RCap"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/rcapyear_waves_1/rcapyear_waves_1",
+  "title": "The Realised Cap HODL Waves by Year Acquired",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Year % RCap"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_0_costvalue/revived_supply_0_costvalue",
+  "title": "Net Realised Profit/Loss Breakdown by Age (14d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Net PnL"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_0_realized/revived_supply_0_realized",
+  "title": "Realised Value Breakdown by Age (14d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Realised"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_0_supply/revived_supply_0_supply",
+  "title": "Revived Supply Breakdown by Age (14d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Revived Supply"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_1_realized/revived_supply_1_realized",
+  "title": "Realised Value Breakdown by Age (14d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_1_supply/revived_supply_1_supply",
+  "title": "Revived Supply Breakdown by Age (14d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Age Dominance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_2_loss/revived_supply_2_loss",
+  "title": "Realised Loss Breakdown by Age (7d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Loss by Age"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_2_profit/revived_supply_2_profit",
+  "title": "Realised Profit Breakdown by Age (7d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Profit by Age"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_2_realized/revived_supply_2_realized",
+  "title": "Realised Value Breakdown by Age (14d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_2_supply/revived_supply_2_supply",
+  "title": "Revived Supply Breakdown by Age (14d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_age_byyear_0/revived_supply_age_byyear_0",
+  "title": "Total Revived Supply By Age and Year [BTC]",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Year BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_age_byyear_1/revived_supply_age_byyear_1",
+  "title": "Total Revived Supply By Age and Year [USD]",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Year USD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_year_2_costvalue/revived_supply_year_2_costvalue",
+  "title": "Net Realised Profit/Loss Breakdown by Year (7d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Net Realised [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_year_2_loss/revived_supply_year_2_loss",
+  "title": "Realised Loss Breakdown by Year (7d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Loss"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_year_2_profit/revived_supply_year_2_profit",
+  "title": "Realised Profit Breakdown by Year (7d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Profit"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_year_2_realized/revived_supply_year_2_realized",
+  "title": "Realised Value Breakdown by Year (7d EMA)",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Realised [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_year_byyear_0/revived_supply_year_byyear_0",
+  "title": "Total Revived Supply By Year Acquired [BTC]",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Year Revived BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/revived_supply_year_byyear_1/revived_supply_year_byyear_1",
+  "title": "Total Revived Supply By Year Acquired [USD]",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Year Revived USD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/rhodl/rhodl",
+  "title": "RHODL Ratio",
+  "category": "Supply Dynamics",
+  "tags": [
+   "View Chart"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/spent_volume_agebands_0/spent_volume_agebands_0",
+  "title": "Spent Volume Age Bands",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/spent_volume_agebands_1/spent_volume_agebands_1",
+  "title": "Spent Volume Age Bands",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Relative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/supply_bytxtype/supply_bytxtype",
+  "title": "Supply Breakdown by Script Type",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Supply"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/utxo_count_bytxtype_0/utxo_count_bytxtype_0",
+  "title": "UTXO Count by Script Type",
+  "category": "Supply Dynamics",
+  "tags": [
+   "UTXO"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/utxo_count_bytxtype_1/utxo_count_bytxtype_1",
+  "title": "UTXO Count by Script Type",
+  "category": "Supply Dynamics",
+  "tags": [
+   "UTXO %"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/volume_bysize_usd/volume_bysize_usd",
+  "title": "Volume Breakdown by USD Size",
+  "category": "Supply Dynamics",
+  "tags": [
+   "USD Dominance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/volume_bytxtype_0/volume_bytxtype_0",
+  "title": "Volume Breakdown by Script Type",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Vol USD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/volume_bytxtype_1/volume_bytxtype_1",
+  "title": "Volume Breakdown by Script Type",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Vol %"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/volume_size_0_costvalue/volume_size_0_costvalue",
+  "title": "Net Realised Profit/Loss Breakdown by Size",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Net PnL"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/volume_size_0_realized/volume_size_0_realized",
+  "title": "Realised Value Breakdown by Size",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/volume_size_0_supply/volume_size_0_supply",
+  "title": "Onchain Volume Breakdown by Size",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/volume_size_1_realized/volume_size_1_realized",
+  "title": "Realised Value Breakdown by Size",
+  "category": "Supply Dynamics",
+  "tags": [
+   "BTC Dominance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/volume_size_1_supply/volume_size_1_supply",
+  "title": "Onchain Volume Breakdown by Size",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/volume_size_2_costvalue/volume_size_2_costvalue",
+  "title": "Net Realised Profit/Loss Breakdown by Size",
+  "category": "Supply Dynamics",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/volume_size_2_realized/volume_size_2_realized",
+  "title": "Realised Value Breakdown by Size",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Realised"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/volume_size_2_supply/volume_size_2_supply",
+  "title": "Onchain Volume Breakdown by Size",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Volume"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/year_waves_0/year_waves_0",
+  "title": "The HODL Waves by Acquired Year",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/supply/year_waves_1/year_waves_1",
+  "title": "The HODL Waves by Acquired Year",
+  "category": "Supply Dynamics",
+  "tags": [
+   "Relative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/drawdown_time2recover/drawdown_time2recover",
+  "title": "Consecutive Months Trading Below ATH",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/histogram_priceperformance_bullbear_1/histogram_priceperformance_bullbear_1",
+  "title": "Price Performance (1-day) Bull and Bear Histogram",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/histogram_priceperformance_bullbear_30/histogram_priceperformance_bullbear_30",
+  "title": "Price Performance (30-day) Bull and Bear Histogram",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/histogram_priceperformance_bullbear_7/histogram_priceperformance_bullbear_7",
+  "title": "Price Performance (7-day) Bull and Bear Histogram",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/market_cap/market_cap",
+  "title": "Market Cap 1-day Change",
+  "category": "Technicals",
+  "tags": [
+   "Market Cap"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/price_minus_bestworst_2016-04-01/price_minus_bestworst_2016-04-01",
+  "title": "Price Performance Excluding Best & Worst Days",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/price_minus_bestworst_2016-06-01/price_minus_bestworst_2016-06-01",
+  "title": "Price Performance Excluding Best & Worst Days",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/price_minus_bestworst_2019-01-01/price_minus_bestworst_2019-01-01",
+  "title": "Price Performance Excluding Best & Worst Days",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/price_minus_bestworst_2020-04-01/price_minus_bestworst_2020-04-01",
+  "title": "Price Performance Excluding Best & Worst Days",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/price_minus_bestworst_2020-11-01/price_minus_bestworst_2020-11-01",
+  "title": "Price Performance Excluding Best & Worst Days",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/price_minus_bestworst_2021-11-01/price_minus_bestworst_2021-11-01",
+  "title": "Price Performance Excluding Best & Worst Days",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/price_minus_bestworst_2023-01-01/price_minus_bestworst_2023-01-01",
+  "title": "Price Performance Excluding Best & Worst Days",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/price_sum_updowndays_30/price_sum_updowndays_30",
+  "title": "Price 30-day Net Count of Up/Down days",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/price_sum_updowndays_365/price_sum_updowndays_365",
+  "title": "Price 365-day Net Count of Up/Down days",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/price_sum_updowndays_90/price_sum_updowndays_90",
+  "title": "Price 90-day Net Count of Up/Down days",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/seasonality_bymonth_bars_btc/seasonality_bymonth_bars_btc",
+  "title": "Bitcoin Monthly Average Performance",
+  "category": "Technicals",
+  "tags": [
+   "BTC By Month"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_bollingerbands_140/technical_bollingerbands_140",
+  "title": "Bollinger Bands",
+  "category": "Technicals",
+  "tags": [
+   "Weekly"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_bollingerbands_20/technical_bollingerbands_20",
+  "title": "Bollinger Bands",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_bollingerbands_daysabove/technical_bollingerbands_daysabove",
+  "title": "Percent Days Above Middle Bollinger Band (365-day)",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_choppinessindex/technical_choppinessindex",
+  "title": "Choppiness Index",
+  "category": "Technicals",
+  "tags": [
+   "View Chart!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_consecutive_1m/technical_consecutive_1m",
+  "title": "Number of Consecutive Months",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_consecutive_1w/technical_consecutive_1w",
+  "title": "Number of Consecutive Weeks",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_consecutive_1y/technical_consecutive_1y",
+  "title": "Number of Consecutive Years",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_consecutive_3m/technical_consecutive_3m",
+  "title": "Number of Consecutive Quarters",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_dailypriceperformance_1d_0/technical_dailypriceperformance_1d_0",
+  "title": "Bitcoin Daily Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "1D"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_dailypriceperformance_1d_1/technical_dailypriceperformance_1d_1",
+  "title": "Bitcoin Daily Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "1D"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_dailypriceperformance_1m_0/technical_dailypriceperformance_1m_0",
+  "title": "Bitcoin Monthly Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "1M"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_dailypriceperformance_1m_1/technical_dailypriceperformance_1m_1",
+  "title": "Bitcoin Monthly Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "1M"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_dailypriceperformance_1w_0/technical_dailypriceperformance_1w_0",
+  "title": "Bitcoin Weekly Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "1W"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_dailypriceperformance_1w_1/technical_dailypriceperformance_1w_1",
+  "title": "Bitcoin Weekly Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "1W"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_dailypriceperformance_1y_0/technical_dailypriceperformance_1y_0",
+  "title": "Bitcoin Yearly Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "1Y"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_dailypriceperformance_1y_1/technical_dailypriceperformance_1y_1",
+  "title": "Bitcoin Yearly Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "1Y"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_dailypriceperformance_3m_0/technical_dailypriceperformance_3m_0",
+  "title": "Bitcoin Quarterly Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "3M"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_dailypriceperformance_3m_1/technical_dailypriceperformance_3m_1",
+  "title": "Bitcoin Quarterly Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "3M"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_drawdowns_0/technical_drawdowns_0",
+  "title": "Bitcoin Market Drawdowns (%)",
+  "category": "Technicals",
+  "tags": [
+   "Drawdowns from ATH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_drawdowns_1/technical_drawdowns_1",
+  "title": "Bitcoin Market Drawdowns (USD)",
+  "category": "Technicals",
+  "tags": [
+   "$ ATH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_drawdowns_bear/technical_drawdowns_bear",
+  "title": "Bitcoin Bear Market Rally Performance",
+  "category": "Technicals",
+  "tags": [
+   "Bear Market Rally Performance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_drawdowns_bull/technical_drawdowns_bull",
+  "title": "Bitcoin Bull Market Correction Drawdowns",
+  "category": "Technicals",
+  "tags": [
+   "Bull Market Correction Drawdowns"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_drawdowns_byperiod/technical_drawdowns_byperiod",
+  "title": "Bitcoin Market Drawdowns",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_epochcycle_price_-1/technical_epochcycle_price_-1",
+  "title": "Bitcoin Index Performance Since Cycle Low",
+  "category": "Technicals",
+  "tags": [
+   "Cycle Low"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_epochcycle_price_0/technical_epochcycle_price_0",
+  "title": "Bitcoin Index Performance Since Halving",
+  "category": "Technicals",
+  "tags": [
+   "Halving"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_epochcycle_price_1/technical_epochcycle_price_1",
+  "title": "Bitcoin Index Performance Since Cycle ATH",
+  "category": "Technicals",
+  "tags": [
+   "Cycle Top"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_epochcycle_reali_-1/technical_epochcycle_reali_-1",
+  "title": "Bitcoin Index Performance Since Cycle Low",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_intradaypriceperformance_0/technical_intradaypriceperformance_0",
+  "title": "Bitcoin Intraday Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "Intra [USD]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_intradaypriceperformance_1/technical_intradaypriceperformance_1",
+  "title": "Bitcoin Intraday Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "Intra [%]"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_macd_1w/technical_macd_1w",
+  "title": "Weekly Moving Average Convergence Divergence (MACD)",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_macd/technical_macd",
+  "title": "Daily Moving Average Convergence Divergence (MACD)",
+  "category": "Technicals",
+  "tags": [
+   "View Chart!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_pricehighlowrange_30/technical_pricehighlowrange_30",
+  "title": "30-day Price High, Low and Range",
+  "category": "Technicals",
+  "tags": [
+   "Price High/Low Range 30-day"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_pricehighlowrange_7/technical_pricehighlowrange_7",
+  "title": "7-day Price High, Low and Range",
+  "category": "Technicals",
+  "tags": [
+   "Price High/Low Range 7-day"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_pricehighlowrange_90/technical_pricehighlowrange_90",
+  "title": "90-day Price High, Low and Range",
+  "category": "Technicals",
+  "tags": [
+   "Price High/Low Range 90-day"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_profitabledays/technical_profitabledays",
+  "title": "Profitable Days",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_quarterlymonthlyweeklyroi/technical_quarterlymonthlyweeklyroi",
+  "title": "Quarterly, Monthly, and Weekly Returns",
+  "category": "Technicals",
+  "tags": [
+   "Rolling Price Performance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_realizedvolatility/technical_realizedvolatility",
+  "title": "Realized Volatility",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_rsi14_1d/technical_rsi14_1d",
+  "title": "Relative Strength Index (RSI-14)",
+  "category": "Technicals",
+  "tags": [
+   "RSI-14"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_rsi14_1m/technical_rsi14_1m",
+  "title": "Relative Strength Index (RSI-14)",
+  "category": "Technicals",
+  "tags": [
+   "1-month"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_rsi14_1w/technical_rsi14_1w",
+  "title": "Relative Strength Index (RSI-14)",
+  "category": "Technicals",
+  "tags": [
+   "1-week"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_stochasticoscillator/technical_stochasticoscillator",
+  "title": "Stochastic Oscillator",
+  "category": "Technicals",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_table_monthlyperf_price/technical_table_monthlyperf_price",
+  "title": "Bitcoin Monthly Price Performance",
+  "category": "Technicals",
+  "tags": [
+   "Monthly Price Performance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/yoy_performance/yoy_performance",
+  "title": "Rolling 365d Return Multiple",
+  "category": "Technicals",
+  "tags": [
+   "YoY Perf"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/bitcoin_0/bitcoin_0",
+  "title": "BITCOIN Consecutive Days Without a Drawdown (From ATH)",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/bitcoin_30/bitcoin_30",
+  "title": "BITCOIN Consecutive Days Without a Drawdown (30-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/bitcoin_7/bitcoin_7",
+  "title": "BITCOIN Consecutive Days Without a Drawdown (7-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/bitcoin_90/bitcoin_90",
+  "title": "BITCOIN Consecutive Days Without a Drawdown (90-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/gold_0/gold_0",
+  "title": "GOLD Consecutive Days Without a Drawdown (From ATH)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Gold ATH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/gold_30/gold_30",
+  "title": "GOLD Consecutive Days Without a Drawdown (30-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Gold 30"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/gold_7/gold_7",
+  "title": "GOLD Consecutive Days Without a Drawdown (7-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/gold_90/gold_90",
+  "title": "GOLD Consecutive Days Without a Drawdown (90-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Gold 90"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/ndq_0/ndq_0",
+  "title": "NDQ Consecutive Days Without a Drawdown (From ATH)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "NDQ ATH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/ndq_30/ndq_30",
+  "title": "NDQ Consecutive Days Without a Drawdown (30-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "NDQ 30"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/ndq_7/ndq_7",
+  "title": "NDQ Consecutive Days Without a Drawdown (7-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/ndq_90/ndq_90",
+  "title": "NDQ Consecutive Days Without a Drawdown (90-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "NDQ 90"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/spx_0/spx_0",
+  "title": "SPX Consecutive Days Without a Drawdown (From ATH)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "SPX ATH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/spx_30/spx_30",
+  "title": "SPX Consecutive Days Without a Drawdown (30-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "SPX 30"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/spx_7/spx_7",
+  "title": "SPX Consecutive Days Without a Drawdown (7-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/consecutivedays_drawdown/spx_90/spx_90",
+  "title": "SPX Consecutive Days Without a Drawdown (90-day window)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "SPX 90"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/correlations_btc_30/correlations_btc_30",
+  "title": "Bitcoin Correlation to Tradfi Assets (30-day)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "30d"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/correlations_btc_365/correlations_btc_365",
+  "title": "Bitcoin Correlation to Tradfi Assets (365-day)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "365d"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/correlations_btc_7/correlations_btc_7",
+  "title": "Bitcoin Correlation to Tradfi Assets (7-day)",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/correlations_btc_90/correlations_btc_90",
+  "title": "Bitcoin Correlation to Tradfi Assets (90-day)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "90d"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/forexpricedingold/forexpricedingold",
+  "title": "Fiat Currencies Priced in Gold Since 2022-02-01",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Fiat vs Gold!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/forexpricedinusd/forexpricedinusd",
+  "title": "Exchange Rates vs USD Since 2020-01-01",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Forex"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/gold_drawdowns_bull/gold_drawdowns_bull",
+  "title": "Gold Market Correction Profile",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Drawdowns"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/gold_etfs_0/gold_etfs_0",
+  "title": "Gold ETF Holdings",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "ETF Balance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/gold_etfs_1/gold_etfs_1",
+  "title": "YoY Gold ETF Change",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "ETF Flows"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/gold_mayermultiple/gold_mayermultiple",
+  "title": "Gold Mayer Multiple",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Mayer Multiple"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/gold_priced_spx/gold_priced_spx",
+  "title": "SPX Priced in Gold",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "vs SPX"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/gold_regional_0/gold_regional_0",
+  "title": "Gold YoY Reserve Change by Region (Since 2002)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Regional Balance"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/gold_regional_1/gold_regional_1",
+  "title": "Gold YoY Reserve Change by Region (Since 2002)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Regional Flows"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/gold_yields_dxy/gold_yields_dxy",
+  "title": "Gold, 10y Yields & The US Dollar",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "DXY & 10y"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/goldsilverratio/goldsilverratio",
+  "title": "Gold/Silver Ratio",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/goldstrength/goldstrength",
+  "title": "Gold Relative Strength Since 2022-02-01",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "vs Assets"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/performancebyyear_Bitcoin/performancebyyear_Bitcoin",
+  "title": "Bitcoin Performance By Year",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "BTC"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/performancebyyear_DXY/performancebyyear_DXY",
+  "title": "DXY Performance By Year",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "DXY"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/performancebyyear_GOLD/performancebyyear_GOLD",
+  "title": "GOLD Performance By Year",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Gold"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/performancebyyear_NDQ/performancebyyear_NDQ",
+  "title": "NDQ Performance By Year",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "NDQ"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/performancebyyear_SPX-EW/performancebyyear_SPX-EW",
+  "title": "SPX-EW Performance By Year",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/performancebyyear_SPX/performancebyyear_SPX",
+  "title": "SPX Performance By Year",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "SPX"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/performancebyyear_TLT/performancebyyear_TLT",
+  "title": "TLT Performance By Year",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/relativestrength/relativestrength",
+  "title": "Asset Class Relative Strength Since 2020-01-01",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Since 2020"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/silver_mayermultiple/silver_mayermultiple",
+  "title": "Silver Mayer Multiple",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_aussiehousepricesbtc_abs/tradfi_aussiehousepricesbtc_abs",
+  "title": "Australian Median House Price by State [BTC]",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Avg Australian House by State"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_aussiehousepricesbtc_statista/tradfi_aussiehousepricesbtc_statista",
+  "title": "Australian Average House Price in Bitcoin",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Avg Australian House Price"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_btc_vs tradfi_drawdown_0/tradfi_btc_vs tradfi_drawdown_0",
+  "title": "Bitcoin Relative Drawdowns from ATH",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Drawdown (ATH)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_btc_vs tradfi_drawdown_365/tradfi_btc_vs tradfi_drawdown_365",
+  "title": "Bitcoin Relative Drawdowns Over Last 365-days",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Drawdown (365d)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_btc_vs_mag7_price_byyear/tradfi_btc_vs_mag7_price_byyear",
+  "title": "Bitcoin vs Mag-7: Yearly Price Performance",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "By Year"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_btc_vs_mag7_price_sincedate_2020-01-01/tradfi_btc_vs_mag7_price_sincedate_2020-01-01",
+  "title": "Bitcoin vs Mag-7: Price Performance Since 2020-01-01",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Since 2020"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_btc_vs_mag7_sortino1825/tradfi_btc_vs_mag7_sortino1825",
+  "title": "Bitcoin vs Mag-7: Sortino Ratio (5.0-year)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "5yr Sortino"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_btc_vs_mag7_volatility90/tradfi_btc_vs_mag7_volatility90",
+  "title": "Bitcoin vs Mag-7: Realised Volatility (90-day)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Volatility"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_btc_vs_tradfi_rollingperformance30/tradfi_btc_vs_tradfi_rollingperformance30",
+  "title": "Comparative Rolling Performance Over Last 30-days",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_btc_vs_tradfi_rollingperformance365/tradfi_btc_vs_tradfi_rollingperformance365",
+  "title": "Comparative Rolling Performance Over Last 365-days",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Performance (365d)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_btc_vs_tradfi_rollingperformance90/tradfi_btc_vs_tradfi_rollingperformance90",
+  "title": "Comparative Rolling Performance Over Last 90-days",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "Performance (90d)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/tradfi_bxy_indexexchangerate_btc/tradfi_bxy_indexexchangerate_btc",
+  "title": "The Bitcoin Index Exchange Rate (BXY)",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "BXY Index!"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/usdollarstrength/usdollarstrength",
+  "title": "US Dollar Strength",
+  "category": "BTC vs TradFi",
+  "tags": [
+   "USD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/volatilitybyyear_Bitcoin/volatilitybyyear_Bitcoin",
+  "title": "Bitcoin Volatility By Year",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/volatilitybyyear_DXY/volatilitybyyear_DXY",
+  "title": "DXY Volatility By Year",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/volatilitybyyear_GOLD/volatilitybyyear_GOLD",
+  "title": "GOLD Volatility By Year",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/volatilitybyyear_NDQ/volatilitybyyear_NDQ",
+  "title": "NDQ Volatility By Year",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/volatilitybyyear_SPX-EW/volatilitybyyear_SPX-EW",
+  "title": "SPX-EW Volatility By Year",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/volatilitybyyear_SPX/volatilitybyyear_SPX",
+  "title": "SPX Volatility By Year",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/volatilitybyyear_TLT/volatilitybyyear_TLT",
+  "title": "TLT Volatility By Year",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/tradfi/volatilitybyyear_USOIL/volatilitybyyear_USOIL",
+  "title": "USOIL Volatility By Year",
+  "category": "BTC vs TradFi",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/avgunrealised_profitloss/avgunrealised_profitloss",
+  "title": "Average Unrealised Profit/Loss by Cohort",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/aviv_gradient_180/aviv_gradient_180",
+  "title": "AVIV Gradient Oscillator 180-day",
+  "category": "Unrealised P/L",
+  "tags": [
+   "180D"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/aviv_gradient_30/aviv_gradient_30",
+  "title": "AVIV Gradient Oscillator 30-day",
+  "category": "Unrealised P/L",
+  "tags": [
+   "30D"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/aviv_gradient_360/aviv_gradient_360",
+  "title": "AVIV Gradient Oscillator 360-day",
+  "category": "Unrealised P/L",
+  "tags": [
+   "360D"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/aviv_gradient_90/aviv_gradient_90",
+  "title": "AVIV Gradient Oscillator 90-day",
+  "category": "Unrealised P/L",
+  "tags": [
+   "90D"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/aviv_gradient_all/aviv_gradient_all",
+  "title": "AVIV Gradient Oscillator Signal",
+  "category": "Unrealised P/L",
+  "tags": [
+   "All"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/aviv_lth_zscore/aviv_lth_zscore",
+  "title": "Long-Term Holder AVIV Z-Score",
+  "category": "Unrealised P/L",
+  "tags": [
+   "AVIV Z-Score"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/histogram_bullbear_aviv_zscore/histogram_bullbear_aviv_zscore",
+  "title": "AVIV Ratio Z-Score Histogram",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Hist Z"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/histogram_bullbear_mvrv_lth_zscore/histogram_bullbear_mvrv_lth_zscore",
+  "title": "LTH-MVRV Ratio Z-Score Histogram",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Hist-LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/histogram_bullbear_mvrv_sth_zscore/histogram_bullbear_mvrv_sth_zscore",
+  "title": "STH-MVRV Ratio Z-Score Histogram",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Histogram"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/histogram_bullbear_mvrv_zscore/histogram_bullbear_mvrv_zscore",
+  "title": "MVRV Ratio Z-Score Histogram",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Histogram"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/histogram_mvrv_bullbear_aviv/histogram_mvrv_bullbear_aviv",
+  "title": "AVIV Bull and Bear Histogram",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Hist"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/histogram_mvrv_bullbear_mvrv_lth/histogram_mvrv_bullbear_mvrv_lth",
+  "title": "MVRV_LTH Bull and Bear Histogram",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/histogram_mvrv_bullbear_mvrv_sth/histogram_mvrv_bullbear_mvrv_sth",
+  "title": "MVRV_STH Bull and Bear Histogram",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/histogram_mvrv_bullbear_mvrv/histogram_mvrv_bullbear_mvrv",
+  "title": "MVRV Bull and Bear Histogram",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/histogram_mvrv/histogram_mvrv",
+  "title": "MVRV Histogram",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Histogram: MVRV by Cohort"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/histogram_nupl/histogram_nupl",
+  "title": "NUPL Histogram",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Histogram: NUPL by Cohort"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_all_zscore/mvrv_all_zscore",
+  "title": "The MVRV Ratio Z-Score",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Z-Score"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_all/mvrv_all",
+  "title": "The MVRV Ratio",
+  "category": "Unrealised P/L",
+  "tags": [
+   "MVRV Ratio"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_aviv_0/mvrv_aviv_0",
+  "title": "True Market Mean and AVIV Ratio Indicator",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_aviv_1/mvrv_aviv_1",
+  "title": "True Market Mean and AVIV Ratio Indicator",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Metric"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_aviv_zscore_365/mvrv_aviv_zscore_365",
+  "title": "The AVIV Ratio Z-Score",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_aviv_zscore/mvrv_aviv_zscore",
+  "title": "The AVIV Ratio Z-Score",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Z-Score"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_bycycle/mvrv_bycycle",
+  "title": "MVRV_STH By Cycle",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_gradient_180/mvrv_gradient_180",
+  "title": "MVRV Gradient Oscillator 180-day",
+  "category": "Unrealised P/L",
+  "tags": [
+   "180D"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_gradient_30/mvrv_gradient_30",
+  "title": "MVRV Gradient Oscillator 30-day",
+  "category": "Unrealised P/L",
+  "tags": [
+   "30D"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_gradient_360/mvrv_gradient_360",
+  "title": "MVRV Gradient Oscillator 360-day",
+  "category": "Unrealised P/L",
+  "tags": [
+   "360D"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_gradient_90/mvrv_gradient_90",
+  "title": "MVRV Gradient Oscillator 90-day",
+  "category": "Unrealised P/L",
+  "tags": [
+   "90D"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_gradient_all/mvrv_gradient_all",
+  "title": "MVRV Gradient Oscillator Signal",
+  "category": "Unrealised P/L",
+  "tags": [
+   "All"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_lth_zscore/mvrv_lth_zscore",
+  "title": "Long-Term Holder MVRV Z-Score",
+  "category": "Unrealised P/L",
+  "tags": [
+   "MVRV Z-Score"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_lth/mvrv_lth",
+  "title": "Long-Term Holder MVRV Ratio",
+  "category": "Unrealised P/L",
+  "tags": [
+   "MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_momentum_lth/mvrv_momentum_lth",
+  "title": "Long-Term Holder MVRV Ratio Momentum",
+  "category": "Unrealised P/L",
+  "tags": [
+   "LTH-MVRV Momentum"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_momentum_sth/mvrv_momentum_sth",
+  "title": "Short-Term Holder MVRV Ratio Momentum",
+  "category": "Unrealised P/L",
+  "tags": [
+   "STH-MVRV Momentum"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_momentum/mvrv_momentum",
+  "title": "MVRV Ratio Momentum",
+  "category": "Unrealised P/L",
+  "tags": [
+   "MVRV Momentum"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_sth_zscore/mvrv_sth_zscore",
+  "title": "Short-Term Holder MVRV Z-Score",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Z-Score"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_sth/mvrv_sth",
+  "title": "Short-Term Holder MVRV Ratio",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Metric"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_triple/mvrv_triple",
+  "title": "Key Cost Basis Models and MVRV Oscillators",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_unrealisedpnl/mvrv_unrealisedpnl",
+  "title": "The MVRV Ratio and Unrealised Profit/Loss",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/mvrv_zscore_ribbon/mvrv_zscore_ribbon",
+  "title": "MVRV Z-Score Ribbon",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/nupl_aviv/nupl_aviv",
+  "title": "Cointime Net Unrealized Profit/Loss (NUPL-AVIV)",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/nupl_bycohort_zscore/nupl_bycohort_zscore",
+  "title": "Net Unrealised Profit/Loss by Cohort Z-Score (NUPL-Z)",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Z-Score"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/nupl_bycohort/nupl_bycohort",
+  "title": "Net Unrealised Profit/Loss by Cohort (NUPL)",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Cohort"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/nupl_lth_aviv/nupl_lth_aviv",
+  "title": "Net Unrealized Profit/Loss for Long-Term Holders (NUPL-LTH-AVIV)",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/nupl_lth/nupl_lth",
+  "title": "Net Unrealized Profit/Loss for Long-Term Holders (NUPL-LTH)",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/nupl_sth/nupl_sth",
+  "title": "Net Unrealized Profit/Loss for Short-Term Holders (NUPL-STH)",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/nupl/nupl",
+  "title": "Net Unrealized Profit/Loss (NUPL)",
+  "category": "Unrealised P/L",
+  "tags": [
+   "NUPL"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/pctsupplyinprofit_all/pctsupplyinprofit_all",
+  "title": "Percent Supply in Profit",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Market"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/pctsupplyinprofit_lth/pctsupplyinprofit_lth",
+  "title": "Long-Term Holder Percent Supply in Profit",
+  "category": "Unrealised P/L",
+  "tags": [
+   "LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/pctsupplyinprofit_sth/pctsupplyinprofit_sth",
+  "title": "Short-Term Holder Percent Supply in Profit",
+  "category": "Unrealised P/L",
+  "tags": [
+   "STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/pctunrealisedprofit_all/pctunrealisedprofit_all",
+  "title": "Percent Unrealised Profit",
+  "category": "Unrealised P/L",
+  "tags": [
+   "% Market"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/pctunrealisedprofit_lth/pctunrealisedprofit_lth",
+  "title": "Long-Term Holder Percent Unrealised Profit",
+  "category": "Unrealised P/L",
+  "tags": [
+   "% LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/pctunrealisedprofit_sth/pctunrealisedprofit_sth",
+  "title": "Short-Term Holder Percent Unrealised Profit",
+  "category": "Unrealised P/L",
+  "tags": [
+   "% STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/seller_exhaustion_constant_supply/seller_exhaustion_constant_supply",
+  "title": "Supply Seller Exhaustion Constants",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Seller Exhaustion"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/seller_exhaustion_constant_unrealised/seller_exhaustion_constant_unrealised",
+  "title": "Unrealised Seller Exhaustion Constants",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/sthcostbasis_delta/sthcostbasis_delta",
+  "title": "Short-Term Holder Cost Basis Change",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Cost Basis"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/sthmvrv_bollingerbands/sthmvrv_bollingerbands",
+  "title": "Short-Term Holder MVRV Bollinger Bands",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Bollinger"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/sthmvrv_indicator/sthmvrv_indicator",
+  "title": "Short-Term Holder MVRV Indicator",
+  "category": "Unrealised P/L",
+  "tags": [
+   "STH-MVRV"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/sthsoprmvrv_indicator/sthsoprmvrv_indicator",
+  "title": "Short-Term Holder MVRV and SOPR Indicators",
+  "category": "Unrealised P/L",
+  "tags": [
+   "The STH Indicator"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/supply_profitloss_ratio_all/supply_profitloss_ratio_all",
+  "title": "Supply in Profit/Loss Ratio",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/supply_profitloss_ratio_lth/supply_profitloss_ratio_lth",
+  "title": "Long-Term Holder Supply in Profit/Loss Ratio",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/supply_profitloss_ratio_sth/supply_profitloss_ratio_sth",
+  "title": "Short-Term Holder Supply in Profit/Loss Ratio",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Supply"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/topheavy_drawdowns_bull_pctsupplyinprofit/topheavy_drawdowns_bull_pctsupplyinprofit",
+  "title": "Cycle Percent Supply in Profit",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Drawdowns"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/topheavy_drawdowns_bull_pctunrealisedprofit_marketcap/topheavy_drawdowns_bull_pctunrealisedprofit_marketcap",
+  "title": "Cycle Percent Unrealised Profit (vs Market Cap)",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/topheavy_drawdowns_bull_pctunrealisedprofit_unrealizedtotal/topheavy_drawdowns_bull_pctunrealisedprofit_unrealizedtotal",
+  "title": "Cycle Percent Unrealised Profit (vs Total Unrealised Value)",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/topheavy_supplyinloss_lth/topheavy_supplyinloss_lth",
+  "title": "Top Heavy Markets: Percent Long-Term Holder Supply in Loss",
+  "category": "Unrealised P/L",
+  "tags": [
+   "LTH in Loss"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/topheavy_supplyinloss_sth_1/topheavy_supplyinloss_sth_1",
+  "title": "Top Heavy Markets: Relative Short-Term Holder Supply in Loss (%)",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/topheavy_supplyinloss_sth/topheavy_supplyinloss_sth",
+  "title": "Top Heavy Markets: Short-Term Holder Supply in Loss",
+  "category": "Unrealised P/L",
+  "tags": [
+   "STH in Loss"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/topheavy_supplyinloss/topheavy_supplyinloss",
+  "title": "Supply in Loss",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/topheavy_unrealisedloss_lth/topheavy_unrealisedloss_lth",
+  "title": "Long-Term Holder Wealth Held in Loss",
+  "category": "Unrealised P/L",
+  "tags": [
+   "URL LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/topheavy_unrealisedloss_sth/topheavy_unrealisedloss_sth",
+  "title": "Short-Term Holder Wealth Held in Loss",
+  "category": "Unrealised P/L",
+  "tags": [
+   "URL STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/topheavy_unrealisedloss/topheavy_unrealisedloss",
+  "title": "Total Wealth Held in Loss",
+  "category": "Unrealised P/L",
+  "tags": [
+   "URL Market"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/unrealised_profitloss_0/unrealised_profitloss_0",
+  "title": "Unrealised Profit/Loss",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Absolute"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/unrealised_profitloss_1/unrealised_profitloss_1",
+  "title": "Relative Unrealised Profit/Loss",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Relative"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/unrealised_profitloss_bycohort/unrealised_profitloss_bycohort",
+  "title": "Unrealised Profit/Loss by Cohort",
+  "category": "Unrealised P/L",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/unrealised_profitloss_ratio_all/unrealised_profitloss_ratio_all",
+  "title": "Unrealised Profit/Loss Ratio",
+  "category": "Unrealised P/L",
+  "tags": [
+   "Market"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/unrealised_profitloss_ratio_lth/unrealised_profitloss_ratio_lth",
+  "title": "Long-Term Holder Unrealised Profit/Loss Ratio",
+  "category": "Unrealised P/L",
+  "tags": [
+   "LTH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/unrealised/unrealised_profitloss_ratio_sth/unrealised_profitloss_ratio_sth",
+  "title": "Short-Term Holder Unrealised Profit/Loss Ratio",
+  "category": "Unrealised P/L",
+  "tags": [
+   "STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_2019-02-15/urpd_2019-02-15",
+  "title": "Supply Distribution as of 15-Feb-2019 [URPD]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_2021-05-01/urpd_2021-05-01",
+  "title": "Supply Distribution as of 01-May-2021 [URPD]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_2021-07-01/urpd_2021-07-01",
+  "title": "Supply Distribution as of 01-Jul-2021 [URPD]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_2021-12-31/urpd_2021-12-31",
+  "title": "Supply Distribution as of 31-Dec-2021 [URPD]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_2022-05-01/urpd_2022-05-01",
+  "title": "Supply Distribution as of 01-May-2022 [URPD]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_2022-12-31/urpd_2022-12-31",
+  "title": "Supply Distribution as of 31-Dec-2022 [URPD]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_analysis_tool",
+  "title": "URPD Analysis Tool",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": false,
+  "plain": true
+ },
+ {
+  "path": "btconchain/urpd/urpd_cohort/urpd_cohort",
+  "title": "Supply Distribution by Cohort as of 05-Jul-2026 [URPD]",
+  "category": "URPD",
+  "tags": [
+   "LTH/STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_14_realized/urpd_diff_14_realized",
+  "title": "Realised Value Change Over Last 14-days [URPD-R-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_14/urpd_diff_14",
+  "title": "Supply Change Over Last 14-days [URPD-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_180_realized/urpd_diff_180_realized",
+  "title": "Realised Value Change Over Last 180-days [URPD-R-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_180/urpd_diff_180",
+  "title": "Supply Change Over Last 180-days [URPD-diff]",
+  "category": "URPD",
+  "tags": [
+   "180d"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_2016-01-01_2017-12-17/urpd_diff_2016-01-01_2017-12-17",
+  "title": "Supply Change Between 01-Jan-2016 & 17-Dec-2017 [URPD-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_2017-12-17_2020-03-12/urpd_diff_2017-12-17_2020-03-12",
+  "title": "Supply Change Between 17-Dec-2017 & 12-Mar-2020 [URPD-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_2020-03-12_2021-12-31/urpd_diff_2020-03-12_2021-12-31",
+  "title": "Supply Change Between 12-Mar-2020 & 31-Dec-2021 [URPD-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_2021-12-31_2023-01-01/urpd_diff_2021-12-31_2023-01-01",
+  "title": "Supply Change Between 31-Dec-2021 & 01-Jan-2023 [URPD-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_2022-01-04_2022-03-28/urpd_diff_2022-01-04_2022-03-28",
+  "title": "Supply Change Between 04-Jan-2022 & 28-Mar-2022 [URPD-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_2024-11-01/urpd_diff_2024-11-01",
+  "title": "Supply Change Between 01-Nov-2024 & 05-Jul-2026 [URPD-diff]",
+  "category": "URPD",
+  "tags": [
+   "Diff Nov-24"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_2024-12-16/urpd_diff_2024-12-16",
+  "title": "Supply Change Between 16-Dec-2024 & 02-Jun-2026 [URPD-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_2025-03-01/urpd_diff_2025-03-01",
+  "title": "Supply Change Between 01-Mar-2025 & 05-Jul-2026 [URPD-diff]",
+  "category": "URPD",
+  "tags": [
+   "Diff Mar-25"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_2025-08-30/urpd_diff_2025-08-30",
+  "title": "Supply Change Between 30-Aug-2025 & 02-Jun-2026 [URPD-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_2026-01-01/urpd_diff_2026-01-01",
+  "title": "Supply Change Between 01-Jan-2026 & 02-Jun-2026 [URPD-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_30_realized/urpd_diff_30_realized",
+  "title": "Realised Value Change Over Last 30-days [URPD-R-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_30_volume_usd/urpd_diff_30_volume_usd",
+  "title": "Supply Value Change Over Last 30-days [URPD-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_30/urpd_diff_30",
+  "title": "Supply Change Over Last 30-days [URPD-diff]",
+  "category": "URPD",
+  "tags": [
+   "30d"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_365_realized/urpd_diff_365_realized",
+  "title": "Realised Value Change Over Last 365-days [URPD-R-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_365/urpd_diff_365",
+  "title": "Supply Change Over Last 365-days [URPD-diff]",
+  "category": "URPD",
+  "tags": [
+   "365d"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_55_realized/urpd_diff_55_realized",
+  "title": "Realised Value Change Over Last 55-days [URPD-R-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_55/urpd_diff_55",
+  "title": "Supply Change Over Last 55-days [URPD-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_90_realized/urpd_diff_90_realized",
+  "title": "Realised Value Change Over Last 90-days [URPD-R-diff]",
+  "category": "URPD",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_diff_90/urpd_diff_90",
+  "title": "Supply Change Over Last 90-days [URPD-diff]",
+  "category": "URPD",
+  "tags": [
+   "90d"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_realised_cohort_2019-02-15/urpd_realised_cohort_2019-02-15",
+  "title": "Invested Value by Cohort as of 15-Feb-2019 [URPD-R]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_realised_cohort_2022-12-31/urpd_realised_cohort_2022-12-31",
+  "title": "Invested Value by Cohort as of 31-Dec-2022 [URPD-R]",
+  "category": "URPD",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_realised_cohort/urpd_realised_cohort",
+  "title": "Invested Value by Cohort as of 05-Jul-2026 [URPD-R]",
+  "category": "URPD",
+  "tags": [
+   "LTH/STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_realised/urpd_realised",
+  "title": "Invested Wealth as of 05-Jul-2026 [URPD-R]",
+  "category": "URPD",
+  "tags": [
+   "USD Invested"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_unrealised_cohort/urpd_unrealised_cohort",
+  "title": "Unrealised Profit/Loss by Cohort as of 05-Jul-2026 [URPD-U]",
+  "category": "URPD",
+  "tags": [
+   "LTH/STH"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd_unrealised/urpd_unrealised",
+  "title": "Unrealised Profit/Loss as of 05-Jul-2026 (Price at $62.6k) [URPD-U]",
+  "category": "URPD",
+  "tags": [
+   "Unrealised PnL"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/urpd/urpd/urpd",
+  "title": "Supply Distribution as of 05-Jul-2026 [URPD]",
+  "category": "URPD",
+  "tags": [
+   "URPD"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "framework/framework_00/framework_00",
+  "title": "The Checkonchain Analysis Framework",
+  "category": "Framework",
+  "tags": [
+   "Onchain Framework"
+  ],
+  "light": false,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "macroeconomic/macro/usdebt_to_gdp/usdebt_to_gdp",
+  "title": "US Debt to GDP Ratio",
+  "category": "Macroeconomic",
+  "tags": [
+   "US Debt to GDP"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "macroeconomic/macro/usgov_balancesheet/usgov_balancesheet",
+  "title": "US Government Surplus/Deficit",
+  "category": "Macroeconomic",
+  "tags": [
+   "US Debt, Revenue, & Interest"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "macroeconomic/macro/usgovernmentdebt_btc/usgovernmentdebt_btc",
+  "title": "US Government Total Debt in Bitcoin",
+  "category": "Macroeconomic",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "macroeconomic/macro/usliquidity_0/usliquidity_0",
+  "title": "US Net Liquidity",
+  "category": "Macroeconomic",
+  "tags": [
+   "US Liquidity (Total)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "macroeconomic/macro/usliquidity_1_30/usliquidity_1_30",
+  "title": "US Net Liquidity Change (30-day)",
+  "category": "Macroeconomic",
+  "tags": [
+   "US Liquidity Change (30d)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "macroeconomic/macro/usliquidity_1_90/usliquidity_1_90",
+  "title": "US Net Liquidity Change (90-day)",
+  "category": "Macroeconomic",
+  "tags": [
+   "US Liquidity Change (90d)"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "macroeconomic/macro/ustreasury_yield_curve/ustreasury_yield_curve",
+  "title": "US Treasury Yield Curve",
+  "category": "Macroeconomic",
+  "tags": [
+   "US Yield Curve"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "macroeconomic/macro/ustreasury_yields_inversion/ustreasury_yields_inversion",
+  "title": "US Treasury Yield Curve Inversion (vs FEDFUNDS)",
+  "category": "Macroeconomic",
+  "tags": [
+   "US Rate Inversion"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "macroeconomic/macro/ustreasury_yields_real/ustreasury_yields_real",
+  "title": "US Treasury Yields (Real vs CPI)",
+  "category": "Macroeconomic",
+  "tags": [],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "macroeconomic/macro/ustreasury_yields/ustreasury_yields",
+  "title": "US Treasury Yields (Nominal)",
+  "category": "Macroeconomic",
+  "tags": [
+   "US Interest Rates"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "partners/japan/breakdown_lthsth_1_en/breakdown_lthsth_1_en",
+  "title": "Breakdown Lthsth 1 En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/breakdown_lthsth_1_jp/breakdown_lthsth_1_jp",
+  "title": "Breakdown Lthsth 1 Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/derivatives_futures_fundingrate_en/derivatives_futures_fundingrate_en",
+  "title": "Derivatives Futures Fundingrate En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/derivatives_futures_fundingrate_jp/derivatives_futures_fundingrate_jp",
+  "title": "Derivatives Futures Fundingrate Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/derivatives_futures_oi_byexchange_0_en/derivatives_futures_oi_byexchange_0_en",
+  "title": "Derivatives Futures Oi Byexchange 0 En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/derivatives_futures_oi_byexchange_0_jp/derivatives_futures_oi_byexchange_0_jp",
+  "title": "Derivatives Futures Oi Byexchange 0 Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/etf_flows_1_1w_en/etf_flows_1_1w_en",
+  "title": "Etf Flows 1 1w En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/etf_flows_1_1w_jp/etf_flows_1_1w_jp",
+  "title": "Etf Flows 1 1w Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/mvrv_all_zscore_en/mvrv_all_zscore_en",
+  "title": "Mvrv All Zscore En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/mvrv_all_zscore_jp/mvrv_all_zscore_jp",
+  "title": "Mvrv All Zscore Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/pctsupplyinprofit_all_en/pctsupplyinprofit_all_en",
+  "title": "Pctsupplyinprofit All En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/pctsupplyinprofit_all_jp/pctsupplyinprofit_all_jp",
+  "title": "Pctsupplyinprofit All Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/pricing_mayermultiple_en/pricing_mayermultiple_en",
+  "title": "Pricing Mayermultiple En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/pricing_mayermultiple_jp/pricing_mayermultiple_jp",
+  "title": "Pricing Mayermultiple Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/pricing_onchainoriginals_en/pricing_onchainoriginals_en",
+  "title": "Pricing Onchainoriginals En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/pricing_onchainoriginals_jp/pricing_onchainoriginals_jp",
+  "title": "Pricing Onchainoriginals Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/pricing_realisedcap_en/pricing_realisedcap_en",
+  "title": "Pricing Realisedcap En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/pricing_realisedcap_jp/pricing_realisedcap_jp",
+  "title": "Pricing Realisedcap Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/rcaphodl_waves_1_en/rcaphodl_waves_1_en",
+  "title": "Rcaphodl Waves 1 En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/rcaphodl_waves_1_jp/rcaphodl_waves_1_jp",
+  "title": "Rcaphodl Waves 1 Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/revived_supply_2_supply_en/revived_supply_2_supply_en",
+  "title": "Revived Supply 2 Supply En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/revived_supply_2_supply_jp/revived_supply_2_supply_jp",
+  "title": "Revived Supply 2 Supply Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/sthmvrv_indicator_en/sthmvrv_indicator_en",
+  "title": "Sthmvrv Indicator En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/sthmvrv_indicator_jp/sthmvrv_indicator_jp",
+  "title": "Sthmvrv Indicator Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/sthsopr_indicator_en/sthsopr_indicator_en",
+  "title": "Sthsopr Indicator En",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "partners/japan/sthsopr_indicator_jp/sthsopr_indicator_jp",
+  "title": "Sthsopr Indicator Jp",
+  "category": "Partners: Japan",
+  "tags": [],
+  "light": true,
+  "dark": false,
+  "plain": false,
+  "hidden": true
+ },
+ {
+  "path": "testing/test_chart/test_chart",
+  "title": "Test Chart",
+  "category": "Testing",
+  "tags": [],
+  "light": false,
+  "dark": true,
+  "plain": false,
+  "hidden": true
+ }
+]

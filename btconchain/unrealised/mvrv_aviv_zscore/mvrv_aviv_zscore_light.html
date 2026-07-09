@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The AVIV Ratio Z-Score - _checkonchain</title>
+<meta name="description" content="The AVIV Ratio Z-Score - Bitcoin on-chain analysis chart by _checkonchain (Unrealised P/L).">
+<link rel="icon" type="image/png" href="https://cdn.prod.website-files.com/660a0afa9461dd6b2c8d20ca/661e1dcc98b2d700ee15fd1e_CoC-Favicon-lrg.png">
+<style>html,body{margin:0;padding:0;height:100%;overflow:hidden}iframe{border:0;width:100%;height:100%;display:block}</style>
+</head>
+<body>
+<iframe id="chart" title="The AVIV Ratio Z-Score - _checkonchain" allowfullscreen></iframe>
+<script>
+(function(){
+  var urls={light:"https://charts-cdn.checkonchain.com/btconchain/unrealised/mvrv_aviv_zscore/mvrv_aviv_zscore_light.html",dark:"https://charts-cdn.checkonchain.com/btconchain/unrealised/mvrv_aviv_zscore/mvrv_aviv_zscore_dark.html"};
+  var own="https://charts-cdn.checkonchain.com/btconchain/unrealised/mvrv_aviv_zscore/mvrv_aviv_zscore_light.html";
+  var pref=null;
+  try{pref=localStorage.getItem('coc-theme');}catch(e){}
+  var src=(pref&&urls[pref])?urls[pref]:own;
+  document.getElementById('chart').src=src;
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://charts-cdn.checkonchain.com/btconchain/unrealised/mvrv_aviv_zscore/mvrv_aviv_zscore_light.html"></noscript>
+</body>
+</html>

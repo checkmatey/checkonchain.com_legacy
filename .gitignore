@@ -1,0 +1,8 @@
+# Internal build/upload tooling - not for the public repo
+scripts/
+
+# Contains live R2 credentials - NEVER commit
+docs/UPLOADING_CHARTS.md
+
+# OS noise
+.DS_Store
