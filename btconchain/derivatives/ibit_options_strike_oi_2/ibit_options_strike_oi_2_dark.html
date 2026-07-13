@@ -9,17 +9,6 @@
 <style>html,body{margin:0;padding:0;height:100%;overflow:hidden}iframe{border:0;width:100%;height:100%;display:block}</style>
 </head>
 <body>
-<iframe id="chart" title="IBIT Options Open Interest by Strike (Oct-26 to Dec-26) - _checkonchain" allowfullscreen></iframe>
-<script>
-(function(){
-  var urls={light:"https://charts-cdn.checkonchain.com/btconchain/derivatives/ibit_options_strike_oi_2/ibit_options_strike_oi_2_light.html",dark:"https://charts-cdn.checkonchain.com/btconchain/derivatives/ibit_options_strike_oi_2/ibit_options_strike_oi_2_dark.html"};
-  var own="https://charts-cdn.checkonchain.com/btconchain/derivatives/ibit_options_strike_oi_2/ibit_options_strike_oi_2_dark.html";
-  var pref=null;
-  try{pref=localStorage.getItem('coc-theme');}catch(e){}
-  var src=(pref&&urls[pref])?urls[pref]:own;
-  document.getElementById('chart').src=src;
-})();
-</script>
-<noscript><meta http-equiv="refresh" content="0; url=https://charts-cdn.checkonchain.com/btconchain/derivatives/ibit_options_strike_oi_2/ibit_options_strike_oi_2_dark.html"></noscript>
+<iframe id="chart" title="IBIT Options Open Interest by Strike (Oct-26 to Dec-26) - _checkonchain" src="https://charts-cdn.checkonchain.com/btconchain/derivatives/ibit_options_strike_oi_2/ibit_options_strike_oi_2_dark.html" allowfullscreen></iframe>
 </body>
 </html>
