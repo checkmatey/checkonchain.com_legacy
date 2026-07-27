@@ -276,6 +276,39 @@
   "plain": false
  },
  {
+  "path": "btconchain/pricing/cagr_endpoints_usd/cagr_endpoints_usd",
+  "title": "CAGR Endpoints (USD)",
+  "category": "Pricing Models",
+  "tags": [
+   "CAGR Comparison"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricemodel_cagr/pricemodel_cagr",
+  "title": "Price Model CAGR",
+  "category": "Pricing Models",
+  "tags": [
+   "CAGR Comparison"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/pricemodel_cagr_extrapolated/pricemodel_cagr_extrapolated",
+  "title": "Price Model CAGR (Extrapolated)",
+  "category": "Pricing Models",
+  "tags": [
+   "CAGR Comparison"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
   "path": "btconchain/capitalrotation/capitalrotation_calmarratio_tradfi/capitalrotation_calmarratio_tradfi",
   "title": "Calmar Ratio Comparison with Tradfi Assets (5-year)",
   "category": "Capital Rotation",
