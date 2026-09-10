@@ -3094,6 +3094,33 @@
   "plain": false
  },
  {
+  "path": "btconchain/pricing/meanreversion_bands/meanreversion_bands",
+  "title": "Bitcoin Mean Reversion Index Price Bands (All-History Projection)",
+  "category": "Pricing Models",
+  "tags": [
+   "Mean Reversion",
+   "Mean Reversion Bands",
+   "All-History Projection"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/meanreversion_bands_pit/meanreversion_bands_pit",
+  "title": "Bitcoin Mean Reversion Index Price Bands (Point-in-Time)",
+  "category": "Pricing Models",
+  "tags": [
+   "Mean Reversion",
+   "Mean Reversion Bands",
+   "PIT",
+   "Point-in-Time"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
   "path": "btconchain/pricing/meanreversion_bystrike/meanreversion_bystrike",
   "title": "Bitcoin Mean Reversion Index by Strike Price (Latest)",
   "category": "Pricing Models",
@@ -3110,6 +3137,20 @@
   "category": "Pricing Models",
   "tags": [
    "Mean Reversion Index"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/pricing/meanreversion_index_pit/meanreversion_index_pit",
+  "title": "Bitcoin Mean Reversion Index (Point-in-Time)",
+  "category": "Pricing Models",
+  "tags": [
+   "Mean Reversion",
+   "Mean Reversion Index",
+   "PIT",
+   "Point-in-Time"
   ],
   "light": true,
   "dark": true,
