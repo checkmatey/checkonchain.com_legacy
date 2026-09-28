@@ -5518,7 +5518,22 @@
   "title": "Bitcoin Index Performance Since Cycle Low",
   "category": "Technicals",
   "tags": [
-   "Cycle Low"
+   "Cycle Low",
+   "Cycle Low - Price Pain",
+   "Price Pain"
+  ],
+  "light": true,
+  "dark": true,
+  "plain": false
+ },
+ {
+  "path": "btconchain/technical/technical_epochcycle_price_-2/technical_epochcycle_price_-2",
+  "title": "Bitcoin Index Performance Since Time-Pain Capitulation",
+  "category": "Technicals",
+  "tags": [
+   "Cycle Low",
+   "Cycle Low - Time Pain",
+   "Time Pain"
   ],
   "light": true,
   "dark": true,
